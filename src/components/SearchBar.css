@@ -1,0 +1,98 @@
+.search-container {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  min-height: 80px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: var(--dark-card);
+  position: relative;
+  padding: 16px 24px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.search-bar {
+  display: flex;
+  background: #fff;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  align-items: center;
+}
+
+.search-bar:focus-within {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  padding: 12px 16px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--sans);
+  font-weight: 300;
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.search-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 12px;
+}
+
+.search-action-button {
+  background: var(--dark);
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+  transition: all 0.3s;
+  white-space: nowrap;
+  font-family: var(--sans);
+  font-weight: 500;
+}
+
+.search-action-button:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.search-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0 auto 12px;
+  flex-shrink: 0;
+}
+
+.expand-button {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--gold);
+}

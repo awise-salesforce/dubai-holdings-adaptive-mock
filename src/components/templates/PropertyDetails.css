@@ -1,0 +1,196 @@
+.property-details-template {
+  animation: fadeUp 0.6s ease-out;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: var(--gold-dark);
+  font-size: 13px;
+  cursor: pointer;
+  font-family: var(--sans);
+  padding: 8px 0;
+  margin-bottom: 16px;
+  transition: color 0.2s;
+}
+
+.back-button:hover { color: var(--gold); }
+
+.pd-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.pd-image-section {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pd-image-section img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.pd-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 5px 14px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pd-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.pd-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.pd-name {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 4px 0;
+}
+
+.pd-price {
+  font-size: 1.2rem;
+  color: var(--gold-dark);
+  font-weight: 500;
+}
+
+.pd-location {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.pd-description {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-top: 12px;
+  font-weight: 300;
+}
+
+.pd-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.pd-btn-primary {
+  padding: 10px 24px;
+  background: var(--dark);
+  color: var(--gold);
+  border: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.pd-btn-primary:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.pd-btn-secondary {
+  padding: 10px 24px;
+  background: transparent;
+  color: var(--gold-dark);
+  border: 1px solid var(--gold);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.pd-btn-secondary:hover {
+  background: rgba(201, 169, 110, 0.1);
+}
+
+.pd-section {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pd-section h2 {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.pd-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pd-amenity-chip {
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: var(--sans);
+}
+
+.pd-payment-table-wrapper {
+  overflow-x: auto;
+}
+
+.pd-payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 13px;
+}
+
+.pd-payment-table th,
+.pd-payment-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pd-payment-table th {
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
+
+.pd-note {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 12px;
+  font-style: italic;
+}

@@ -1,0 +1,201 @@
+.schedule-template {
+  animation: fadeUp 0.6s ease-out;
+}
+
+.schedule-hero {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.schedule-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.schedule-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+}
+
+.schedule-hero-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 8px;
+  font-family: var(--sans);
+}
+
+.schedule-hero-overlay h1 {
+  font-family: var(--serif);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.schedule-hero-overlay h1 em {
+  color: var(--gold-light);
+}
+
+.schedule-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 32px 0;
+}
+
+.schedule-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-block h3 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-dark);
+  margin-bottom: 12px;
+  font-family: var(--sans);
+  font-weight: 500;
+}
+
+.address-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.address-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.hours-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  font-size: 13px;
+}
+
+.hours-days {
+  flex: 1;
+  color: var(--text-primary);
+  font-weight: 400;
+}
+
+.hours-time {
+  color: var(--text-secondary);
+}
+
+.hours-status {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.hours-status.open {
+  background: rgba(46, 125, 91, 0.1);
+  color: #2E7D5B;
+}
+
+.hours-status.closed {
+  background: rgba(204, 68, 68, 0.1);
+  color: #c44;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.contact-label {
+  color: var(--text-secondary);
+  min-width: 70px;
+}
+
+.contact-row a {
+  color: var(--gold-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-row a:hover { color: var(--gold); }
+
+.visitor-note {
+  padding: 12px 16px;
+  background: var(--cream);
+  border-left: 3px solid var(--gold);
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.schedule-map {
+  display: flex;
+  align-items: stretch;
+}
+
+.map-placeholder {
+  width: 100%;
+  background: var(--cream-dark);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  gap: 8px;
+}
+
+.map-pin { font-size: 2rem; }
+
+.map-placeholder p {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.map-address {
+  font-size: 12px !important;
+  color: var(--text-secondary) !important;
+  font-weight: 300 !important;
+}
+
+.directions-btn {
+  margin-top: 16px;
+  padding: 8px 20px;
+  background: var(--dark);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: var(--sans);
+  transition: all 0.3s;
+}
+
+.directions-btn:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
