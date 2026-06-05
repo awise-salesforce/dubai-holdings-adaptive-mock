@@ -775,7 +775,7 @@ const ALIASES: Record<string, string> = {
   'waterfront': 'waterfront residences',
   'beach': 'waterfront residences',
   'beachfront': 'waterfront residences',
-  'sea': 'waterfront residences',
+  'sea view': 'waterfront residences',
   'ocean': 'waterfront residences',
   'apartment': 'urban apartments',
   'apartments': 'urban apartments',
@@ -783,15 +783,6 @@ const ALIASES: Record<string, string> = {
   'penthouse': 'luxury penthouses',
   'penthouses': 'luxury penthouses',
   'luxury': 'luxury penthouses',
-  'viewing': 'schedule a viewing',
-  'visit': 'schedule a viewing',
-  'appointment': 'schedule a viewing',
-  'book': 'schedule a viewing',
-  'payment': 'tell me about payment plans',
-  'plans': 'tell me about payment plans',
-  'installment': 'tell me about payment plans',
-  'compare': 'compare these properties',
-  'comparison': 'compare these properties',
   'solaya': 'solaya at la mer',
   'la mer': 'solaya at la mer',
   'bluewaters': 'bluewaters bay',
@@ -809,11 +800,36 @@ const ALIASES: Record<string, string> = {
   'trade centre': 'emirates towers',
 };
 
+// Action intents take priority over project names
+const INTENT_ALIASES: Record<string, string> = {
+  'compare': 'compare these properties',
+  'comparison': 'compare these properties',
+  'versus': 'compare these properties',
+  'vs': 'compare these properties',
+  'viewing': 'schedule a viewing',
+  'visit': 'schedule a viewing',
+  'appointment': 'schedule a viewing',
+  'book': 'schedule a viewing',
+  'schedule': 'schedule a viewing',
+  'payment': 'tell me about payment plans',
+  'plans': 'tell me about payment plans',
+  'installment': 'tell me about payment plans',
+  'price': 'tell me about payment plans',
+  'cost': 'tell me about payment plans',
+};
+
 function findResponse(userMessage: string): StaticContentMessageTextPayload {
   const normalised = userMessage.toLowerCase().trim();
   if (MOCK_RESPONSES[normalised]) return MOCK_RESPONSES[normalised];
 
-  // Check aliases first (longest match wins)
+  // Intent aliases always win (compare, schedule, payment)
+  for (const alias of Object.keys(INTENT_ALIASES)) {
+    if (normalised.includes(alias)) {
+      return MOCK_RESPONSES[INTENT_ALIASES[alias]];
+    }
+  }
+
+  // Then check project/location aliases (longest match wins)
   const aliasKeys = Object.keys(ALIASES).sort((a, b) => b.length - a.length);
   for (const alias of aliasKeys) {
     if (normalised.includes(alias)) {
