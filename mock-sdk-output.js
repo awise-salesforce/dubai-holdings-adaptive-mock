@@ -1,6 +1,6 @@
 function addControllerToPage() {
   // Mock controller - sets up window.AdaptiveWebsite with hardcoded responses
-(function(){"use strict";const d={ON_EMBEDDED_MESSAGE_SENT:"onEmbeddedMessageSent",ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STARTED:"onEmbeddedMessagingTypingIndicatorStarted",ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STOPPED:"onEmbeddedMessagingTypingIndicatorStopped",ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED:"onEmbeddedMessagingContentReceived",ON_EMBEDDED_MESSAGING_CONVERSATION_READY:"onEmbeddedMessagingConversationReady",ON_EMBEDDED_MESSAGING_CONVERSATION_OPENED:"onEmbeddedMessagingConversationOpened",ON_EMBEDDED_MESSAGING_CONVERSATION_STARTED:"onEmbeddedMessagingConversationStarted",ON_EMBEDDED_MESSAGING_CONVERSATION_CLOSED:"onEmbeddedMessagingConversationClosed",ON_EMBEDDED_MESSAGING_WINDOW_MINIMIZED:"onEmbeddedMessagingWindowMinimized",ON_EMBEDDED_MESSAGING_WINDOW_MAXIMIZED:"onEmbeddedMessagingWindowMaximized",ON_EMBEDDED_MESSAGING_LIST_CONVERSATION_ENTRIES:"onEmbeddedMessagingListConversationEntries",ON_EMBEDDED_MESSAGING_DELIVERED:"onEmbeddedMessagingDelivered",ON_EMBEDDED_MESSAGE_READ:"onEmbeddedMessageRead",ON_EMBEDDED_MESSAGING_CONVERSATION_PARTICIPANT_CHANGED:"onEmbeddedMessagingConversationParticipantChanged",ON_EMBEDDED_MESSAGING_CONVERSATION_ROUTED:"onEmbeddedMessagingConversationRouted"},n={default:{text:"Welcome to Dubai Holdings Real Estate. I can help you explore premium properties across our portfolio including Jumeirah Bay Island, Palm Jumeirah, and Dubai Hills. What are you looking for today?",options:[{name:"Show me luxury villas"},{name:"Waterfront apartments"},{name:"Investment opportunities"},{name:"Schedule a viewing"}]},"show me luxury villas":{text:"Here are some of our most exclusive villa offerings across Dubai Holdings communities. Each property features world-class amenities and premium finishes.",curation:[{personalizations:[{personalizationPointName:"DH_Property_Recommendations",data:[{sku:"JBI-V-001",name:"Jumeirah Bay Island Villa",Image:"https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&auto=format&fit=crop",price:45e6,currency:"AED",productLabel:"Ultra Premium",description:"6 Bed, 7 Bath, 12500 sqm",longDescription:"An architectural masterpiece on Jumeirah Bay Island, this villa offers unobstructed views of the Dubai skyline and direct beach access. Features include a private infinity pool, home cinema, and smart home automation throughout.",category1:"Jumeirah Bay Island",category3:"Meraas",bedrooms:6,bathrooms:7,area:12500,areaUnit:"sqft",productUrl:"https://meraas.com/en/master-development/jumeriah-bay-island"},{sku:"PJ-V-002",name:"Palm Jumeirah Signature Villa",Image:"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",price:38e6,currency:"AED",productLabel:"Beachfront",description:"5 Bed, 6 Bath, 10800 sqm",longDescription:"Located on the prestigious Palm Jumeirah frond, this signature villa boasts private beach access, a rooftop terrace with panoramic sea views, and bespoke Italian marble interiors.",category1:"Palm Jumeirah",category3:"Nakheel",bedrooms:5,bathrooms:6,area:10800,areaUnit:"sqft",productUrl:"https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"},{sku:"DH-V-003",name:"Dubai Hills Estate Mansion",Image:"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&auto=format&fit=crop",price:28e6,currency:"AED",productLabel:"Golf Course View",description:"5 Bed, 5 Bath, 9200 sqm",longDescription:"A contemporary mansion overlooking the championship golf course at Dubai Hills Estate. Features include floor-to-ceiling windows, landscaped gardens, and a private wellness suite.",category1:"Dubai Hills Estate",category3:"Dubai Holding RE",bedrooms:5,bathrooms:5,area:9200,areaUnit:"sqft",productUrl:"https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"}]}]}],template:[{name:"Recs"}],options:[{name:"Jumeirah Bay Island"},{name:"Palm Jumeirah"},{name:"Dubai Hills"}]},"waterfront apartments":{text:"Discover our premium waterfront residences offering stunning views and direct access to the water. These properties represent the finest in coastal living.",curation:[{personalizations:[{personalizationPointName:"DH_Property_Recommendations",data:[{sku:"JBI-A-001",name:"Jumeirah Bay Penthouse",Image:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop",price:22e6,currency:"AED",productLabel:"Penthouse",description:"4 Bed, 5 Bath, 7800 sqm",longDescription:"A full-floor penthouse at Jumeirah Bay Island with 360-degree views of the Arabian Gulf and Dubai skyline. Private elevator, rooftop pool, and concierge service.",category1:"Jumeirah Bay Island",category3:"Meraas",bedrooms:4,bathrooms:5,area:7800,areaUnit:"sqft",productUrl:"https://meraas.com/en/master-development/jumeriah-bay-island"},{sku:"DC-A-002",name:"Dubai Creek Harbour Residence",Image:"https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop",price:85e5,currency:"AED",productLabel:"Creek View",description:"3 Bed, 4 Bath, 3200 sqm",longDescription:"Elegant waterfront apartment at Dubai Creek Harbour with views of the historic creek. Modern open-plan design with premium finishes and smart home features.",category1:"Dubai Creek Harbour",category3:"Dubai Holding RE",bedrooms:3,bathrooms:4,area:3200,areaUnit:"sqft",productUrl:"https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"},{sku:"MBR-A-003",name:"Madinat Jumeirah Living",Image:"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop",price:52e5,currency:"AED",productLabel:"Resort Living",description:"2 Bed, 3 Bath, 2100 sqm",longDescription:"Resort-style living in the heart of Madinat Jumeirah. Access to private beach, world-class dining, and the Souk Madinat lifestyle.",category1:"Madinat Jumeirah",category3:"Dubai Holding RE",bedrooms:2,bathrooms:3,area:2100,areaUnit:"sqft",productUrl:"https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"}]}]}],template:[{name:"Recs"}],options:[{name:"Jumeirah Bay Island"},{name:"Dubai Creek"},{name:"Madinat Jumeirah"}]},"investment opportunities":{text:"Dubai's real estate market continues to deliver exceptional returns. Here are our top investment-grade properties with strong rental yields and capital appreciation potential.",curation:[{personalizations:[{personalizationPointName:"DH_Property_Recommendations",data:[{sku:"INV-001",name:"Business Bay Tower Suite",Image:"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",price:32e5,currency:"AED",productLabel:"High Yield",description:"2 Bed, 2 Bath, 1450 sqm",longDescription:"Premium furnished apartment in Business Bay with guaranteed 8% rental yield. Managed by Dubai Holding hospitality division with full hotel services.",category1:"Business Bay",category3:"Dubai Properties",bedrooms:2,bathrooms:2,area:1450,areaUnit:"sqft",productUrl:"https://dp.ae"},{sku:"INV-002",name:"JBR Walk Residence",Image:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",price:48e5,currency:"AED",productLabel:"Tourist Hotspot",description:"3 Bed, 3 Bath, 2200 sqm",longDescription:"Beachfront residence on JBR Walk, one of Dubai's most visited tourist destinations. Strong short-term rental performance with 9.2% average yield.",category1:"JBR",category3:"Dubai Properties",bedrooms:3,bathrooms:3,area:2200,areaUnit:"sqft",productUrl:"https://dp.ae"},{sku:"INV-003",name:"Palm Jumeirah Studio Collection",Image:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop",price:18e5,currency:"AED",productLabel:"Entry Point",description:"Studio, 1 Bath, 650 sqm",longDescription:"Compact luxury studio on Palm Jumeirah — the most iconic address in Dubai. Pool, gym, and beach access. Ideal for holiday rentals with consistent 7.5% yield.",category1:"Palm Jumeirah",category3:"Nakheel",bedrooms:0,bathrooms:1,area:650,areaUnit:"sqft",productUrl:"https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"}]}]}],template:[{name:"Recs"}],options:[{name:"Tell me about payment plans"},{name:"Schedule a viewing"},{name:"Compare these properties"}]},"schedule a viewing":{text:"I'd be happy to help you schedule a private viewing. Here are our Sales Center details.",curation:[{personalizations:[{personalizationPointName:"Schedule_Appointment",data:[{page_info:{project_name:"Dubai Holdings Real Estate",page_title:"Schedule a Private Viewing",hero_image_url:"https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&auto=format&fit=crop",hero_label:"Experience Dubai Living"},sales_center:{name:"Dubai Holdings Sales Centre",address:{line_1:"Dubai Hills Estate",line_2:"Al Khail Road, Dubai",region:"United Arab Emirates"},map_data:{directions_url:"https://maps.app.goo.gl/dubai-hills",iframe_embed_url:""},operating_hours:[{days:"Sunday – Thursday",hours:"9:00 AM – 7:00 PM",current_status:"Open"},{days:"Friday",hours:"2:00 PM – 7:00 PM",current_status:"Open"},{days:"Saturday",hours:"10:00 AM – 6:00 PM",current_status:"Open"}],contact_methods:{phone:"+971 4 888 3333",phone_link:"tel:+97148883333",email:"sales@dubaiholding.com",email_link:"mailto:sales@dubaiholding.com",whatsapp:"+971 50 888 3333"},visitor_notes:"Complimentary valet parking available. Property tours by appointment — walk-ins welcome during operating hours."}}]}]}],template:[{name:"ScheduleAppointment"}]},"tell me about payment plans":{text:"Dubai Holdings offers flexible payment plans across our developments. Most properties feature a 60/40 or 80/20 structure with post-handover options available.",options:[{name:"Show me luxury villas"},{name:"Waterfront apartments"},{name:"Schedule a viewing"}]},"compare these properties":{text:"Here's a detailed comparison of the investment properties to help you make an informed decision.",curation:{products:[{id:"INV-001",image:"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",name:"Business Bay Tower Suite",price:"AED 3,200,000",rating:4.5,features:[{name:"Location",value:"Business Bay"},{name:"Rental Yield",value:"8.0%"},{name:"Size",value:"1,450 sqft"},{name:"Type",value:"2 Bed Apartment"}]},{id:"INV-002",image:"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",name:"JBR Walk Residence",price:"AED 4,800,000",rating:4.7,features:[{name:"Location",value:"JBR"},{name:"Rental Yield",value:"9.2%"},{name:"Size",value:"2,200 sqft"},{name:"Type",value:"3 Bed Beachfront"}]},{id:"INV-003",image:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop",name:"Palm Jumeirah Studio",price:"AED 1,800,000",rating:4.3,features:[{name:"Location",value:"Palm Jumeirah"},{name:"Rental Yield",value:"7.5%"},{name:"Size",value:"650 sqft"},{name:"Type",value:"Studio"}]}]},template:[{name:"Comparison"}]},"jumeirah bay island":{text:"Jumeirah Bay Island by Meraas is one of Dubai's most exclusive addresses — a sculpted island in the shape of a seahorse offering ultra-premium residences and villas.",curation:[{personalizations:[{personalizationPointName:"DH_Property_Recommendations",data:[{sku:"JBI-V-001",name:"Jumeirah Bay Island Villa",Image:"https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&auto=format&fit=crop",price:45e6,currency:"AED",productLabel:"Ultra Premium",description:"6 Bed, 7 Bath, 12500 sqft",category1:"Jumeirah Bay Island",category3:"Meraas",bedrooms:6,bathrooms:7,area:12500,areaUnit:"sqft",productUrl:"https://meraas.com/en/master-development/jumeriah-bay-island"},{sku:"JBI-A-001",name:"Jumeirah Bay Penthouse",Image:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop",price:22e6,currency:"AED",productLabel:"Penthouse",description:"4 Bed, 5 Bath, 7800 sqft",category1:"Jumeirah Bay Island",category3:"Meraas",bedrooms:4,bathrooms:5,area:7800,areaUnit:"sqft",productUrl:"https://meraas.com/en/master-development/jumeriah-bay-island"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Tell me about payment plans"}]},"palm jumeirah":{text:"Palm Jumeirah by Nakheel — the world's most iconic man-made island. Offering beachfront villas and premium apartments with unmatched views of the Arabian Gulf.",curation:[{personalizations:[{personalizationPointName:"DH_Property_Recommendations",data:[{sku:"PJ-V-002",name:"Palm Jumeirah Signature Villa",Image:"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",price:38e6,currency:"AED",productLabel:"Beachfront",description:"5 Bed, 6 Bath, 10800 sqft",category1:"Palm Jumeirah",category3:"Nakheel",bedrooms:5,bathrooms:6,area:10800,areaUnit:"sqft",productUrl:"https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"},{sku:"INV-003",name:"Palm Jumeirah Studio Collection",Image:"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop",price:18e5,currency:"AED",productLabel:"Entry Point",description:"Studio, 1 Bath, 650 sqft",category1:"Palm Jumeirah",category3:"Nakheel",bedrooms:0,bathrooms:1,area:650,areaUnit:"sqft",productUrl:"https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Compare these properties"}]},"dubai hills":{text:"Dubai Hills Estate — a premium master-planned community featuring an 18-hole championship golf course, parks, and world-class retail. The heart of new Dubai.",curation:[{personalizations:[{personalizationPointName:"DH_Property_Recommendations",data:[{sku:"DH-V-003",name:"Dubai Hills Estate Mansion",Image:"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&auto=format&fit=crop",price:28e6,currency:"AED",productLabel:"Golf Course View",description:"5 Bed, 5 Bath, 9200 sqft",category1:"Dubai Hills Estate",category3:"Dubai Holding RE",bedrooms:5,bathrooms:5,area:9200,areaUnit:"sqft",productUrl:"https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Show me luxury villas"}]}};function m(a){const t=a.toLowerCase().trim();if(n[t])return n[t];for(const e of Object.keys(n))if(t.includes(e)||e.includes(t))return n[e];return n.default}let l=0;function r(a,t){l++;const e=t?{text:a}:m(a);return{identifier:`msg-${l}`,entryPayload:{abstractMessage:{staticContent:{formatType:"Text",text:JSON.stringify(e)}},entryType:"Message",sender:{role:t?"EndUser":"Agent",appType:t?"custom":"agent"}},transcriptedTimestamp:Date.now()}}function u(){const a=d;let t=!1;window.AdaptiveWebsite={initialize:()=>{},sendTextMessage:async e=>{const o=r(e,!0);window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:o}})),window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STARTED)),setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STOPPED));const i=r(e,!1);window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:i}}));const s=m(e);(s.curation||s.template)&&window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED,{detail:{content:s}}))},1200+Math.random()*800)},minimize:()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_WINDOW_MINIMIZED))},maximize:()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_WINDOW_MAXIMIZED)),t||(t=!0,window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_OPENED)),setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:r("default",!1)}}));const e=n.default;window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED,{detail:{content:e}}))},600))},initializeConversation:async()=>{t=!0,window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_OPENED)),setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:r("default",!1)}}));const e=n.default;window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED,{detail:{content:e}}))},600)},cleanupConversation:async()=>{},startNewConversation:async()=>{},endConversation:async()=>{t=!1,window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_CLOSED))},sessionExists:()=>!1,Events:a,util:{isConversationEntryStaticContentMessage:e=>{var o;return((o=e==null?void 0:e.entryPayload)==null?void 0:o.entryType)==="Message"},isMessageFromEndUser:e=>{var o,i;return((i=(o=e==null?void 0:e.entryPayload)==null?void 0:o.sender)==null?void 0:i.role)==="EndUser"},isTextMessage:e=>{var o;return((o=e==null?void 0:e.entryPayload)==null?void 0:o.entryType)==="Message"},parseEntryPayload:e=>e,parseJsonInAgentResponse:e=>{try{return JSON.parse(e)}catch{return}},getTextMessageContent:e=>{var o,i,s;return((s=(i=(o=e==null?void 0:e.entryPayload)==null?void 0:o.abstractMessage)==null?void 0:i.staticContent)==null?void 0:s.text)||""}}},setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_READY))},100)}u()})();
+(function(){"use strict";const l={ON_EMBEDDED_MESSAGE_SENT:"onEmbeddedMessageSent",ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STARTED:"onEmbeddedMessagingTypingIndicatorStarted",ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STOPPED:"onEmbeddedMessagingTypingIndicatorStopped",ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED:"onEmbeddedMessagingContentReceived",ON_EMBEDDED_MESSAGING_CONVERSATION_READY:"onEmbeddedMessagingConversationReady",ON_EMBEDDED_MESSAGING_CONVERSATION_OPENED:"onEmbeddedMessagingConversationOpened",ON_EMBEDDED_MESSAGING_CONVERSATION_STARTED:"onEmbeddedMessagingConversationStarted",ON_EMBEDDED_MESSAGING_CONVERSATION_CLOSED:"onEmbeddedMessagingConversationClosed",ON_EMBEDDED_MESSAGING_WINDOW_MINIMIZED:"onEmbeddedMessagingWindowMinimized",ON_EMBEDDED_MESSAGING_WINDOW_MAXIMIZED:"onEmbeddedMessagingWindowMaximized",ON_EMBEDDED_MESSAGING_LIST_CONVERSATION_ENTRIES:"onEmbeddedMessagingListConversationEntries",ON_EMBEDDED_MESSAGING_DELIVERED:"onEmbeddedMessagingDelivered",ON_EMBEDDED_MESSAGE_READ:"onEmbeddedMessageRead",ON_EMBEDDED_MESSAGING_CONVERSATION_PARTICIPANT_CHANGED:"onEmbeddedMessagingConversationParticipantChanged",ON_EMBEDDED_MESSAGING_CONVERSATION_ROUTED:"onEmbeddedMessagingConversationRouted"},s={default:{text:"Welcome to Meraas. I can help you explore our residential projects across Dubai's most iconic communities — from beachfront living at La Mer to urban energy at City Walk and creative culture at d3. What interests you?",options:[{name:"Waterfront residences"},{name:"Urban apartments"},{name:"Luxury penthouses"},{name:"Schedule a viewing"}]},"waterfront residences":{text:"Here are our premier waterfront residences — from the beachfront elegance of Solaya at La Mer to the gulf views at Bluewaters Bay. Each offers direct water access and resort-style living.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"SOLAYA-001",name:"Solaya at La Mer",Image:"https://meraas.com/sites/default/files/2026-04/Gallery-1.jpg",price:138e5,currency:"AED",productLabel:"Beachfront",description:"4 Bed, Penthouse available",longDescription:"A private collection of 234 residences where thoughtfully crafted spaces exude quiet elegance. Nine beachfront buildings maximise sea, city, and beach views with open-plan layouts. Gated residences with direct beach access, minutes from Dubai's centre.",category1:"La Mer",category3:"Meraas",bedrooms:4,bathrooms:5,area:5500,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/solaya"},{sku:"BWB-001",name:"Bluewaters Bay",Image:"https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png",price:285e4,currency:"AED",productLabel:"Waterfront",description:"1 to 4 Bed, Gulf Views",longDescription:"Spectacular, light-flooded waterfront apartments rising from the Arabian Gulf. Contemporary open-plan layouts offer mesmerising views of Dubai city, Ain Dubai, and the yacht-dotted coastline. Elevated community garden, infinity pool with sea views, and tennis court.",category1:"Bluewaters",category3:"Meraas",bedrooms:2,bathrooms:3,area:1800,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/bluewaters-bay"},{sku:"MJL-001",name:"Madinat Jumeirah Living",Image:"https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20-%201.png",price:153e4,currency:"AED",productLabel:"Seafront",description:"1 to 4 Bed, Burj Al Arab Views",longDescription:"A seafront residential community featuring contemporary apartments with traditional Arabesque architectural influences, set against the backdrop of the Burj Al Arab. 190+ berth marina, beach access, and 5-star hospitality experiences.",category1:"Madinat Jumeirah Living",category3:"Meraas",bedrooms:2,bathrooms:2,area:1200,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/mjl-residences"}]}]}],template:[{name:"Recs"}],options:[{name:"Solaya at La Mer"},{name:"Bluewaters Bay"},{name:"Madinat Jumeirah Living"}]},"urban apartments":{text:"Explore our urban living collection — from the creative energy of Dubai Design District to the vibrant heart of City Walk. Modern apartments designed for contemporary lifestyles.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"CWC-001",name:"City Walk Crestlane",Image:"https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg",price:27e5,currency:"AED",productLabel:"New Launch",description:"1 to 4 Bed, Waterfront Urban",longDescription:"An exclusive collection of apartments and duplexes combining urban energy with waterfront living in central Dubai. Water is the essence — buildings surrounded by water features offering tranquil reflections. Sleek finishes, open layouts, and skyline views.",category1:"City Walk",category3:"Meraas",bedrooms:2,bathrooms:2,area:1400,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/city-walk-crestlane"},{sku:"DQD3-001",name:"Design Quarter at d3",Image:"https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png",price:187e4,currency:"AED",productLabel:"Creative Living",description:"1 to 3 Bed, Canal Views",longDescription:"Located in Dubai Design District, home to Dubai Design Week and Fashion Week. City views, modern design, and Dubai Water Canal access. Where home meets hustle meets the creative bustle.",category1:"Dubai Design District",category3:"Meraas",bedrooms:2,bathrooms:2,area:1100,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/designquarter-at-d3"},{sku:"JRET-001",name:"Jumeirah Residences Emirates Towers",Image:"https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-1.jpg",price:351e4,currency:"AED",productLabel:"Iconic Skyline",description:"1 to 4 Bed, Sky Pools",longDescription:"A new architectural icon on Dubai's skyline. One- to four-bedroom apartments with no internal columns, creating open, fluid spaces. Sky terrace with infinity pool, private cinema, padel court, and Jumeirah Signature Services.",category1:"Trade Centre 2",category3:"Meraas",bedrooms:3,bathrooms:3,area:2200,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/jumeirah-emirates-tower"}]}]}],template:[{name:"Recs"}],options:[{name:"City Walk Crestlane"},{name:"Design Quarter at d3"},{name:"Emirates Towers"}]},"luxury penthouses":{text:"Discover our most exclusive residences — penthouses and ultra-premium apartments with panoramic views and bespoke finishes across Dubai's finest addresses.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"SOLAYA-PH",name:"Solaya Penthouse",Image:"https://meraas.com/sites/default/files/2026-04/Gallery-2.jpg",price:138e5,currency:"AED",productLabel:"Penthouse",description:"5 Bed, Beachfront Penthouse",longDescription:"A cultered coastal penthouse at La Mer — 234 residences across nine beachfront buildings. Gated community with direct beach access, private cinema, spa, and curated gardens connecting to Beach Park. Minutes from J1 Beach with a Riviera-inspired lifestyle.",category1:"La Mer",category3:"Meraas",bedrooms:5,bathrooms:6,area:8500,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/solaya"},{sku:"JRET-PH",name:"Emirates Towers Penthouse",Image:"https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-3.jpg",price:15e6,currency:"AED",productLabel:"Sky Living",description:"4 Bed, Double Height, Sky Pool",longDescription:"The pinnacle of Emirates Towers — a 4-bedroom penthouse with double-height living spaces and no internal columns. Private sky terrace with infinity pool, lounge seating, and curated greenery offering unmatched skyline views.",category1:"Trade Centre 2",category3:"Meraas",bedrooms:4,bathrooms:5,area:6800,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/jumeirah-emirates-tower"},{sku:"CWC-DPX",name:"City Walk Crestlane Duplex",Image:"https://meraas.com/sites/default/files/2025-06/Top%20Gallery%202.jpg",price:85e5,currency:"AED",productLabel:"Duplex",description:"4 Bed Duplex, Water Views",longDescription:"A 4-bedroom duplex at City Walk Crestlane where urban energy meets waterfront calm. Panoramic water views, state-of-the-art fitness, infinity pools. 2 min walk from City Mall, 7 min from Jumeirah Beach.",category1:"City Walk",category3:"Meraas",bedrooms:4,bathrooms:4,area:4200,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/city-walk-crestlane"}]}]}],template:[{name:"Recs"}],options:[{name:"Solaya at La Mer"},{name:"Emirates Towers"},{name:"Schedule a viewing"}]},"schedule a viewing":{text:"I'd be happy to help you schedule a private viewing at our Meraas Sales Centre.",curation:[{personalizations:[{personalizationPointName:"Schedule_Appointment",data:[{page_info:{project_name:"Meraas",page_title:"Schedule a Private Viewing",hero_image_url:"https://meraas.com/sites/default/files/2026-04/Gallery-3.jpg",hero_label:"Experience Meraas Living"},sales_center:{name:"Meraas Sales Centre",address:{line_1:"City Walk, Al Wasl",line_2:"Al Safa Street, Dubai",region:"United Arab Emirates"},map_data:{directions_url:"https://maps.app.goo.gl/meraas-citywalk",iframe_embed_url:""},operating_hours:[{days:"Sunday – Thursday",hours:"9:00 AM – 7:00 PM",current_status:"Open"},{days:"Friday",hours:"2:00 PM – 7:00 PM",current_status:"Open"},{days:"Saturday",hours:"10:00 AM – 6:00 PM",current_status:"Open"}],contact_methods:{phone:"+971 4 317 1111",phone_link:"tel:+97143171111",email:"sales@meraas.com",email_link:"mailto:sales@meraas.com",whatsapp:"+971 50 317 1111"},visitor_notes:"Complimentary valet parking available. Property tours by appointment — walk-ins welcome during operating hours. Ask about our virtual tours for overseas buyers."}}]}]}],template:[{name:"ScheduleAppointment"}]},"tell me about payment plans":{text:"Meraas offers flexible payment plans across our developments. City Walk Crestlane starts at AED 2.7M, Design Quarter at d3 from AED 1.87M, and Bluewaters Bay from AED 2.85M. Most projects offer construction-linked installment plans — download the detailed PDF from each project page for full terms.",options:[{name:"Waterfront residences"},{name:"Urban apartments"},{name:"Schedule a viewing"}]},"compare these properties":{text:"Here's a comparison of our featured available residences to help you find the right fit.",curation:{products:[{id:"CWC-001",image:"https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg",name:"City Walk Crestlane",price:"From AED 2.70M",rating:4.7,features:[{name:"Location",value:"City Walk"},{name:"Type",value:"1-4 Bed Apartments"},{name:"Proximity",value:"2 min to City Mall"},{name:"Highlight",value:"Waterfront Urban"}]},{id:"BWB-001",image:"https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png",name:"Bluewaters Bay",price:"From AED 2.85M",rating:4.6,features:[{name:"Location",value:"Bluewaters Island"},{name:"Type",value:"1-4 Bed Waterfront"},{name:"Proximity",value:"5 min walk to Ain Dubai"},{name:"Highlight",value:"Arabian Gulf Views"}]},{id:"DQD3-001",image:"https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png",name:"Design Quarter at d3",price:"From AED 1.87M",rating:4.5,features:[{name:"Location",value:"Dubai Design District"},{name:"Type",value:"1-3 Bed Apartments"},{name:"Proximity",value:"10 min to Downtown"},{name:"Highlight",value:"Canal & Creative Hub"}]}]},template:[{name:"Comparison"}]},"solaya at la mer":{text:"Solaya — a cultured coastal community by Meraas & Brookfield Properties. 234 residences across nine beachfront buildings at La Mer, Jumeirah 1. Direct beach access, surrounded by renowned hotels, beach clubs, and restaurants.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"SOLAYA-2BR",name:"Solaya 2 Bedroom",Image:"https://meraas.com/sites/default/files/2026-04/Gallery-1.jpg",price:138e5,currency:"AED",productLabel:"Beachfront",description:"2 Bed, Sea Views",category1:"La Mer",category3:"Meraas",bedrooms:2,bathrooms:3,area:2800,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/solaya"},{sku:"SOLAYA-4BR",name:"Solaya 4 Bedroom",Image:"https://meraas.com/sites/default/files/2026-04/Gallery-2.jpg",price:22e6,currency:"AED",productLabel:"Premium",description:"4 Bed, Beach Access",category1:"La Mer",category3:"Meraas",bedrooms:4,bathrooms:5,area:5500,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/solaya"},{sku:"SOLAYA-PH",name:"Solaya Penthouse",Image:"https://meraas.com/sites/default/files/2026-04/Gallery-3.jpg",price:35e6,currency:"AED",productLabel:"Penthouse",description:"5 Bed, Full Floor",category1:"La Mer",category3:"Meraas",bedrooms:5,bathrooms:6,area:8500,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/solaya"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Compare these properties"}]},"bluewaters bay":{text:"Bluewaters Bay — spectacular waterfront apartments rising from the Arabian Gulf. Contemporary 1 to 4-bedroom apartments with views of Ain Dubai, the city skyline, and the yacht-dotted coastline. Construction at 23% with Tower 1 at Level 27.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"BWB-1BR",name:"Bluewaters Bay 1 Bedroom",Image:"https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png",price:285e4,currency:"AED",productLabel:"Gulf Views",description:"1 Bed, Ain Dubai Views",category1:"Bluewaters",category3:"Meraas",bedrooms:1,bathrooms:2,area:900,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/bluewaters-bay"},{sku:"BWB-2BR",name:"Bluewaters Bay 2 Bedroom",Image:"https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20%E2%80%93%202.png",price:42e5,currency:"AED",productLabel:"Sea View",description:"2 Bed, Infinity Pool",category1:"Bluewaters",category3:"Meraas",bedrooms:2,bathrooms:3,area:1400,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/bluewaters-bay"},{sku:"BWB-3BR",name:"Bluewaters Bay 3 Bedroom",Image:"https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20%E2%80%93%203.png",price:65e5,currency:"AED",productLabel:"Premium",description:"3 Bed, Panoramic Views",category1:"Bluewaters",category3:"Meraas",bedrooms:3,bathrooms:4,area:2100,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/bluewaters-bay"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Tell me about payment plans"}]},"madinat jumeirah living":{text:"Madinat Jumeirah Living — Dubai's most prestigious seafront neighbourhood. Contemporary apartments with Arabesque influences, set against the Burj Al Arab backdrop. 190+ berth marina, beach access, and 5-star hospitality.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"MJL-1BR",name:"MJL Residences 1 Bed",Image:"https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20-%201.png",price:153e4,currency:"AED",productLabel:"From 1.53M",description:"1 Bed, Burj Al Arab View",category1:"Madinat Jumeirah Living",category3:"Meraas",bedrooms:1,bathrooms:1,area:750,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/mjl-residences"},{sku:"MJL-2BR",name:"MJL Residences 2 Bed",Image:"https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20%E2%80%93%202.png",price:25e5,currency:"AED",productLabel:"Marina View",description:"2 Bed, Marina & Beach",category1:"Madinat Jumeirah Living",category3:"Meraas",bedrooms:2,bathrooms:2,area:1200,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/mjl-residences"},{sku:"MJL-3BR",name:"MJL Residences 3 Bed",Image:"https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20%E2%80%93%203.png",price:38e5,currency:"AED",productLabel:"Premium",description:"3 Bed, Seafront Living",category1:"Madinat Jumeirah Living",category3:"Meraas",bedrooms:3,bathrooms:3,area:1800,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/mjl-residences"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Compare these properties"}]},"city walk crestlane":{text:"City Walk Crestlane — an exclusive collection of apartments and duplexes combining urban energy with waterfront living. Water isn't just a feature — it's the essence. 2 min walk to City Mall, 7 min from Jumeirah Beach.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"CWC-1BR",name:"Crestlane 1 Bedroom",Image:"https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg",price:27e5,currency:"AED",productLabel:"From 2.7M",description:"1 Bed, Water Features",category1:"City Walk",category3:"Meraas",bedrooms:1,bathrooms:1,area:850,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/city-walk-crestlane"},{sku:"CWC-2BR",name:"Crestlane 2 Bedroom",Image:"https://meraas.com/sites/default/files/2025-06/Top%20Gallery%202.jpg",price:42e5,currency:"AED",productLabel:"Skyline Views",description:"2 Bed, Open Layout",category1:"City Walk",category3:"Meraas",bedrooms:2,bathrooms:2,area:1400,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/city-walk-crestlane"},{sku:"CWC-DPX",name:"Crestlane 4 Bed Duplex",Image:"https://meraas.com/sites/default/files/2025-11/880x860.jpg",price:85e5,currency:"AED",productLabel:"Duplex",description:"4 Bed Duplex, Premium",category1:"City Walk",category3:"Meraas",bedrooms:4,bathrooms:4,area:3600,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/city-walk-crestlane"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Tell me about payment plans"}]},"design quarter at d3":{text:"Design Quarter at d3 — where home meets hustle meets the creative bustle. Located in Dubai Design District alongside Dubai Design Week, Fashion Week, and Sole DXB. City views, canal access, and modern community living from AED 1.87M.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"DQD3-1BR",name:"Design Quarter 1 Bed",Image:"https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png",price:187e4,currency:"AED",productLabel:"From 1.87M",description:"1 Bed, Canal View",category1:"Dubai Design District",category3:"Meraas",bedrooms:1,bathrooms:1,area:750,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/designquarter-at-d3"},{sku:"DQD3-2BR",name:"Design Quarter 2 Bed",Image:"https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%202.png",price:26e5,currency:"AED",productLabel:"City View",description:"2 Bed, Creative Hub",category1:"Dubai Design District",category3:"Meraas",bedrooms:2,bathrooms:2,area:1100,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/designquarter-at-d3"},{sku:"DQD3-3BR",name:"Design Quarter 3 Bed",Image:"https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%203.png",price:34e5,currency:"AED",productLabel:"Premium",description:"3 Bed, Panoramic Views",category1:"Dubai Design District",category3:"Meraas",bedrooms:3,bathrooms:3,area:1600,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/designquarter-at-d3"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Compare these properties"}]},"emirates towers":{text:"Jumeirah Residences Emirates Towers — a new architectural icon. Apartments with no internal columns creating open, fluid spaces. Sky terrace with infinity pool, private cinema, padel court, and Jumeirah Signature Services. From AED 3.51M.",curation:[{personalizations:[{personalizationPointName:"Meraas_Property_Recommendations",data:[{sku:"JRET-1BR",name:"Emirates Towers 1 Bed",Image:"https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-1.jpg",price:351e4,currency:"AED",productLabel:"From 3.51M",description:"1 Bed, Skyline Views",category1:"Trade Centre 2",category3:"Meraas",bedrooms:1,bathrooms:1,area:1e3,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/jumeirah-emirates-tower"},{sku:"JRET-3BR",name:"Emirates Towers 3 Bed",Image:"https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-2.jpg",price:82e5,currency:"AED",productLabel:"Double Height",description:"3 Bed, Double Height Living",category1:"Trade Centre 2",category3:"Meraas",bedrooms:3,bathrooms:3,area:2800,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/jumeirah-emirates-tower"},{sku:"JRET-4BR",name:"Emirates Towers 4 Bed",Image:"https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-3.jpg",price:15e6,currency:"AED",productLabel:"Sky Pool",description:"4 Bed, Private Sky Terrace",category1:"Trade Centre 2",category3:"Meraas",bedrooms:4,bathrooms:5,area:4500,areaUnit:"sqft",productUrl:"https://meraas.com/en/project/jumeirah-emirates-tower"}]}]}],template:[{name:"Recs"}],options:[{name:"Schedule a viewing"},{name:"Tell me about payment plans"}]}};function c(a){const t=a.toLowerCase().trim();if(s[t])return s[t];for(const e of Object.keys(s))if(t.includes(e)||e.includes(t))return s[e];return s.default}let m=0;function i(a,t){m++;const e=t?{text:a}:c(a);return{identifier:`msg-${m}`,entryPayload:{abstractMessage:{staticContent:{formatType:"Text",text:JSON.stringify(e)}},entryType:"Message",sender:{role:t?"EndUser":"Agent",appType:t?"custom":"agent"}},transcriptedTimestamp:Date.now()}}function d(){const a=l;let t=!1;window.AdaptiveWebsite={initialize:()=>{},sendTextMessage:async e=>{const r=i(e,!0);window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:r}})),window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STARTED)),setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_TYPING_INDICATOR_STOPPED));const n=i(e,!1);window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:n}}));const o=c(e);(o.curation||o.template)&&window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED,{detail:{content:o}}))},1200+Math.random()*800)},minimize:()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_WINDOW_MINIMIZED))},maximize:()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_WINDOW_MAXIMIZED)),t||(t=!0,window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_OPENED)),setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:i("default",!1)}}));const e=s.default;window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED,{detail:{content:e}}))},600))},initializeConversation:async()=>{t=!0,window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_OPENED)),setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGE_SENT,{detail:{conversationEntry:i("default",!1)}}));const e=s.default;window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED,{detail:{content:e}}))},600)},cleanupConversation:async()=>{},startNewConversation:async()=>{},endConversation:async()=>{t=!1,window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_CLOSED))},sessionExists:()=>!1,Events:a,util:{isConversationEntryStaticContentMessage:e=>{var r;return((r=e==null?void 0:e.entryPayload)==null?void 0:r.entryType)==="Message"},isMessageFromEndUser:e=>{var r,n;return((n=(r=e==null?void 0:e.entryPayload)==null?void 0:r.sender)==null?void 0:n.role)==="EndUser"},isTextMessage:e=>{var r;return((r=e==null?void 0:e.entryPayload)==null?void 0:r.entryType)==="Message"},parseEntryPayload:e=>e,parseJsonInAgentResponse:e=>{try{return JSON.parse(e)}catch{return}},getTextMessageContent:e=>{var r,n,o;return((o=(n=(r=e==null?void 0:e.entryPayload)==null?void 0:r.abstractMessage)==null?void 0:n.staticContent)==null?void 0:o.text)||""}}},setTimeout(()=>{window.dispatchEvent(new CustomEvent(a.ON_EMBEDDED_MESSAGING_CONVERSATION_READY))},100)}d()})();
 
 }
 
@@ -12534,143 +12534,72 @@ const ConversationEventTypes = {
 };
 const MOCK_RESPONSES = {
   default: {
-    text: "Welcome to Dubai Holdings Real Estate. I can help you explore premium properties across our portfolio including Jumeirah Bay Island, Palm Jumeirah, and Dubai Hills. What are you looking for today?",
+    text: "Welcome to Meraas. I can help you explore our residential projects across Dubai's most iconic communities — from beachfront living at La Mer to urban energy at City Walk and creative culture at d3. What interests you?",
     options: [
-      { name: "Show me luxury villas" },
-      { name: "Waterfront apartments" },
-      { name: "Investment opportunities" },
+      { name: "Waterfront residences" },
+      { name: "Urban apartments" },
+      { name: "Luxury penthouses" },
       { name: "Schedule a viewing" }
     ]
   },
-  "show me luxury villas": {
-    text: "Here are some of our most exclusive villa offerings across Dubai Holdings communities. Each property features world-class amenities and premium finishes.",
+  "waterfront residences": {
+    text: "Here are our premier waterfront residences — from the beachfront elegance of Solaya at La Mer to the gulf views at Bluewaters Bay. Each offers direct water access and resort-style living.",
     curation: [
       {
         personalizations: [
           {
-            personalizationPointName: "DH_Property_Recommendations",
+            personalizationPointName: "Meraas_Property_Recommendations",
             data: [
               {
-                sku: "JBI-V-001",
-                name: "Jumeirah Bay Island Villa",
-                Image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&auto=format&fit=crop",
-                price: 45e6,
-                currency: "AED",
-                productLabel: "Ultra Premium",
-                description: "6 Bed, 7 Bath, 12500 sqm",
-                longDescription: "An architectural masterpiece on Jumeirah Bay Island, this villa offers unobstructed views of the Dubai skyline and direct beach access. Features include a private infinity pool, home cinema, and smart home automation throughout.",
-                category1: "Jumeirah Bay Island",
-                category3: "Meraas",
-                bedrooms: 6,
-                bathrooms: 7,
-                area: 12500,
-                areaUnit: "sqft",
-                productUrl: "https://meraas.com/en/master-development/jumeriah-bay-island"
-              },
-              {
-                sku: "PJ-V-002",
-                name: "Palm Jumeirah Signature Villa",
-                Image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",
-                price: 38e6,
+                sku: "SOLAYA-001",
+                name: "Solaya at La Mer",
+                Image: "https://meraas.com/sites/default/files/2026-04/Gallery-1.jpg",
+                price: 138e5,
                 currency: "AED",
                 productLabel: "Beachfront",
-                description: "5 Bed, 6 Bath, 10800 sqm",
-                longDescription: "Located on the prestigious Palm Jumeirah frond, this signature villa boasts private beach access, a rooftop terrace with panoramic sea views, and bespoke Italian marble interiors.",
-                category1: "Palm Jumeirah",
-                category3: "Nakheel",
-                bedrooms: 5,
-                bathrooms: 6,
-                area: 10800,
-                areaUnit: "sqft",
-                productUrl: "https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"
-              },
-              {
-                sku: "DH-V-003",
-                name: "Dubai Hills Estate Mansion",
-                Image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&auto=format&fit=crop",
-                price: 28e6,
-                currency: "AED",
-                productLabel: "Golf Course View",
-                description: "5 Bed, 5 Bath, 9200 sqm",
-                longDescription: "A contemporary mansion overlooking the championship golf course at Dubai Hills Estate. Features include floor-to-ceiling windows, landscaped gardens, and a private wellness suite.",
-                category1: "Dubai Hills Estate",
-                category3: "Dubai Holding RE",
-                bedrooms: 5,
-                bathrooms: 5,
-                area: 9200,
-                areaUnit: "sqft",
-                productUrl: "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    template: [{ name: "Recs" }],
-    options: [
-      { name: "Jumeirah Bay Island" },
-      { name: "Palm Jumeirah" },
-      { name: "Dubai Hills" }
-    ]
-  },
-  "waterfront apartments": {
-    text: "Discover our premium waterfront residences offering stunning views and direct access to the water. These properties represent the finest in coastal living.",
-    curation: [
-      {
-        personalizations: [
-          {
-            personalizationPointName: "DH_Property_Recommendations",
-            data: [
-              {
-                sku: "JBI-A-001",
-                name: "Jumeirah Bay Penthouse",
-                Image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop",
-                price: 22e6,
-                currency: "AED",
-                productLabel: "Penthouse",
-                description: "4 Bed, 5 Bath, 7800 sqm",
-                longDescription: "A full-floor penthouse at Jumeirah Bay Island with 360-degree views of the Arabian Gulf and Dubai skyline. Private elevator, rooftop pool, and concierge service.",
-                category1: "Jumeirah Bay Island",
+                description: "4 Bed, Penthouse available",
+                longDescription: "A private collection of 234 residences where thoughtfully crafted spaces exude quiet elegance. Nine beachfront buildings maximise sea, city, and beach views with open-plan layouts. Gated residences with direct beach access, minutes from Dubai's centre.",
+                category1: "La Mer",
                 category3: "Meraas",
                 bedrooms: 4,
                 bathrooms: 5,
-                area: 7800,
+                area: 5500,
                 areaUnit: "sqft",
-                productUrl: "https://meraas.com/en/master-development/jumeriah-bay-island"
+                productUrl: "https://meraas.com/en/project/solaya"
               },
               {
-                sku: "DC-A-002",
-                name: "Dubai Creek Harbour Residence",
-                Image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop",
-                price: 85e5,
+                sku: "BWB-001",
+                name: "Bluewaters Bay",
+                Image: "https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png",
+                price: 285e4,
                 currency: "AED",
-                productLabel: "Creek View",
-                description: "3 Bed, 4 Bath, 3200 sqm",
-                longDescription: "Elegant waterfront apartment at Dubai Creek Harbour with views of the historic creek. Modern open-plan design with premium finishes and smart home features.",
-                category1: "Dubai Creek Harbour",
-                category3: "Dubai Holding RE",
-                bedrooms: 3,
-                bathrooms: 4,
-                area: 3200,
-                areaUnit: "sqft",
-                productUrl: "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"
-              },
-              {
-                sku: "MBR-A-003",
-                name: "Madinat Jumeirah Living",
-                Image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&auto=format&fit=crop",
-                price: 52e5,
-                currency: "AED",
-                productLabel: "Resort Living",
-                description: "2 Bed, 3 Bath, 2100 sqm",
-                longDescription: "Resort-style living in the heart of Madinat Jumeirah. Access to private beach, world-class dining, and the Souk Madinat lifestyle.",
-                category1: "Madinat Jumeirah",
-                category3: "Dubai Holding RE",
+                productLabel: "Waterfront",
+                description: "1 to 4 Bed, Gulf Views",
+                longDescription: "Spectacular, light-flooded waterfront apartments rising from the Arabian Gulf. Contemporary open-plan layouts offer mesmerising views of Dubai city, Ain Dubai, and the yacht-dotted coastline. Elevated community garden, infinity pool with sea views, and tennis court.",
+                category1: "Bluewaters",
+                category3: "Meraas",
                 bedrooms: 2,
                 bathrooms: 3,
-                area: 2100,
+                area: 1800,
                 areaUnit: "sqft",
-                productUrl: "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"
+                productUrl: "https://meraas.com/en/project/bluewaters-bay"
+              },
+              {
+                sku: "MJL-001",
+                name: "Madinat Jumeirah Living",
+                Image: "https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20-%201.png",
+                price: 153e4,
+                currency: "AED",
+                productLabel: "Seafront",
+                description: "1 to 4 Bed, Burj Al Arab Views",
+                longDescription: "A seafront residential community featuring contemporary apartments with traditional Arabesque architectural influences, set against the backdrop of the Burj Al Arab. 190+ berth marina, beach access, and 5-star hospitality experiences.",
+                category1: "Madinat Jumeirah Living",
+                category3: "Meraas",
+                bedrooms: 2,
+                bathrooms: 2,
+                area: 1200,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/mjl-residences"
               }
             ]
           }
@@ -12679,69 +12608,69 @@ const MOCK_RESPONSES = {
     ],
     template: [{ name: "Recs" }],
     options: [
-      { name: "Jumeirah Bay Island" },
-      { name: "Dubai Creek" },
-      { name: "Madinat Jumeirah" }
+      { name: "Solaya at La Mer" },
+      { name: "Bluewaters Bay" },
+      { name: "Madinat Jumeirah Living" }
     ]
   },
-  "investment opportunities": {
-    text: "Dubai's real estate market continues to deliver exceptional returns. Here are our top investment-grade properties with strong rental yields and capital appreciation potential.",
+  "urban apartments": {
+    text: "Explore our urban living collection — from the creative energy of Dubai Design District to the vibrant heart of City Walk. Modern apartments designed for contemporary lifestyles.",
     curation: [
       {
         personalizations: [
           {
-            personalizationPointName: "DH_Property_Recommendations",
+            personalizationPointName: "Meraas_Property_Recommendations",
             data: [
               {
-                sku: "INV-001",
-                name: "Business Bay Tower Suite",
-                Image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
-                price: 32e5,
+                sku: "CWC-001",
+                name: "City Walk Crestlane",
+                Image: "https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg",
+                price: 27e5,
                 currency: "AED",
-                productLabel: "High Yield",
-                description: "2 Bed, 2 Bath, 1450 sqm",
-                longDescription: "Premium furnished apartment in Business Bay with guaranteed 8% rental yield. Managed by Dubai Holding hospitality division with full hotel services.",
-                category1: "Business Bay",
-                category3: "Dubai Properties",
+                productLabel: "New Launch",
+                description: "1 to 4 Bed, Waterfront Urban",
+                longDescription: "An exclusive collection of apartments and duplexes combining urban energy with waterfront living in central Dubai. Water is the essence — buildings surrounded by water features offering tranquil reflections. Sleek finishes, open layouts, and skyline views.",
+                category1: "City Walk",
+                category3: "Meraas",
                 bedrooms: 2,
                 bathrooms: 2,
-                area: 1450,
+                area: 1400,
                 areaUnit: "sqft",
-                productUrl: "https://dp.ae"
+                productUrl: "https://meraas.com/en/project/city-walk-crestlane"
               },
               {
-                sku: "INV-002",
-                name: "JBR Walk Residence",
-                Image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",
-                price: 48e5,
+                sku: "DQD3-001",
+                name: "Design Quarter at d3",
+                Image: "https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png",
+                price: 187e4,
                 currency: "AED",
-                productLabel: "Tourist Hotspot",
-                description: "3 Bed, 3 Bath, 2200 sqm",
-                longDescription: "Beachfront residence on JBR Walk, one of Dubai's most visited tourist destinations. Strong short-term rental performance with 9.2% average yield.",
-                category1: "JBR",
-                category3: "Dubai Properties",
+                productLabel: "Creative Living",
+                description: "1 to 3 Bed, Canal Views",
+                longDescription: "Located in Dubai Design District, home to Dubai Design Week and Fashion Week. City views, modern design, and Dubai Water Canal access. Where home meets hustle meets the creative bustle.",
+                category1: "Dubai Design District",
+                category3: "Meraas",
+                bedrooms: 2,
+                bathrooms: 2,
+                area: 1100,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/designquarter-at-d3"
+              },
+              {
+                sku: "JRET-001",
+                name: "Jumeirah Residences Emirates Towers",
+                Image: "https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-1.jpg",
+                price: 351e4,
+                currency: "AED",
+                productLabel: "Iconic Skyline",
+                description: "1 to 4 Bed, Sky Pools",
+                longDescription: "A new architectural icon on Dubai's skyline. One- to four-bedroom apartments with no internal columns, creating open, fluid spaces. Sky terrace with infinity pool, private cinema, padel court, and Jumeirah Signature Services.",
+                category1: "Trade Centre 2",
+                category3: "Meraas",
                 bedrooms: 3,
                 bathrooms: 3,
                 area: 2200,
                 areaUnit: "sqft",
-                productUrl: "https://dp.ae"
-              },
-              {
-                sku: "INV-003",
-                name: "Palm Jumeirah Studio Collection",
-                Image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop",
-                price: 18e5,
-                currency: "AED",
-                productLabel: "Entry Point",
-                description: "Studio, 1 Bath, 650 sqm",
-                longDescription: "Compact luxury studio on Palm Jumeirah — the most iconic address in Dubai. Pool, gym, and beach access. Ideal for holiday rentals with consistent 7.5% yield.",
-                category1: "Palm Jumeirah",
-                category3: "Nakheel",
-                bedrooms: 0,
-                bathrooms: 1,
-                area: 650,
-                areaUnit: "sqft",
-                productUrl: "https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"
+                productUrl: "https://meraas.com/en/project/jumeirah-emirates-tower"
               }
             ]
           }
@@ -12750,13 +12679,84 @@ const MOCK_RESPONSES = {
     ],
     template: [{ name: "Recs" }],
     options: [
-      { name: "Tell me about payment plans" },
-      { name: "Schedule a viewing" },
-      { name: "Compare these properties" }
+      { name: "City Walk Crestlane" },
+      { name: "Design Quarter at d3" },
+      { name: "Emirates Towers" }
+    ]
+  },
+  "luxury penthouses": {
+    text: "Discover our most exclusive residences — penthouses and ultra-premium apartments with panoramic views and bespoke finishes across Dubai's finest addresses.",
+    curation: [
+      {
+        personalizations: [
+          {
+            personalizationPointName: "Meraas_Property_Recommendations",
+            data: [
+              {
+                sku: "SOLAYA-PH",
+                name: "Solaya Penthouse",
+                Image: "https://meraas.com/sites/default/files/2026-04/Gallery-2.jpg",
+                price: 138e5,
+                currency: "AED",
+                productLabel: "Penthouse",
+                description: "5 Bed, Beachfront Penthouse",
+                longDescription: "A cultered coastal penthouse at La Mer — 234 residences across nine beachfront buildings. Gated community with direct beach access, private cinema, spa, and curated gardens connecting to Beach Park. Minutes from J1 Beach with a Riviera-inspired lifestyle.",
+                category1: "La Mer",
+                category3: "Meraas",
+                bedrooms: 5,
+                bathrooms: 6,
+                area: 8500,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/solaya"
+              },
+              {
+                sku: "JRET-PH",
+                name: "Emirates Towers Penthouse",
+                Image: "https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-3.jpg",
+                price: 15e6,
+                currency: "AED",
+                productLabel: "Sky Living",
+                description: "4 Bed, Double Height, Sky Pool",
+                longDescription: "The pinnacle of Emirates Towers — a 4-bedroom penthouse with double-height living spaces and no internal columns. Private sky terrace with infinity pool, lounge seating, and curated greenery offering unmatched skyline views.",
+                category1: "Trade Centre 2",
+                category3: "Meraas",
+                bedrooms: 4,
+                bathrooms: 5,
+                area: 6800,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/jumeirah-emirates-tower"
+              },
+              {
+                sku: "CWC-DPX",
+                name: "City Walk Crestlane Duplex",
+                Image: "https://meraas.com/sites/default/files/2025-06/Top%20Gallery%202.jpg",
+                price: 85e5,
+                currency: "AED",
+                productLabel: "Duplex",
+                description: "4 Bed Duplex, Water Views",
+                longDescription: "A 4-bedroom duplex at City Walk Crestlane where urban energy meets waterfront calm. Panoramic water views, state-of-the-art fitness, infinity pools. 2 min walk from City Mall, 7 min from Jumeirah Beach.",
+                category1: "City Walk",
+                category3: "Meraas",
+                bedrooms: 4,
+                bathrooms: 4,
+                area: 4200,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/city-walk-crestlane"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    template: [{ name: "Recs" }],
+    options: [
+      { name: "Solaya at La Mer" },
+      { name: "Emirates Towers" },
+      { name: "Schedule a viewing" }
     ]
   },
   "schedule a viewing": {
-    text: "I'd be happy to help you schedule a private viewing. Here are our Sales Center details.",
+    text: "I'd be happy to help you schedule a private viewing at our Meraas Sales Centre.",
     curation: [
       {
         personalizations: [
@@ -12765,20 +12765,20 @@ const MOCK_RESPONSES = {
             data: [
               {
                 page_info: {
-                  project_name: "Dubai Holdings Real Estate",
+                  project_name: "Meraas",
                   page_title: "Schedule a Private Viewing",
-                  hero_image_url: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&auto=format&fit=crop",
-                  hero_label: "Experience Dubai Living"
+                  hero_image_url: "https://meraas.com/sites/default/files/2026-04/Gallery-3.jpg",
+                  hero_label: "Experience Meraas Living"
                 },
                 sales_center: {
-                  name: "Dubai Holdings Sales Centre",
+                  name: "Meraas Sales Centre",
                   address: {
-                    line_1: "Dubai Hills Estate",
-                    line_2: "Al Khail Road, Dubai",
+                    line_1: "City Walk, Al Wasl",
+                    line_2: "Al Safa Street, Dubai",
                     region: "United Arab Emirates"
                   },
                   map_data: {
-                    directions_url: "https://maps.app.goo.gl/dubai-hills",
+                    directions_url: "https://maps.app.goo.gl/meraas-citywalk",
                     iframe_embed_url: ""
                   },
                   operating_hours: [
@@ -12787,13 +12787,13 @@ const MOCK_RESPONSES = {
                     { days: "Saturday", hours: "10:00 AM – 6:00 PM", current_status: "Open" }
                   ],
                   contact_methods: {
-                    phone: "+971 4 888 3333",
-                    phone_link: "tel:+97148883333",
-                    email: "sales@dubaiholding.com",
-                    email_link: "mailto:sales@dubaiholding.com",
-                    whatsapp: "+971 50 888 3333"
+                    phone: "+971 4 317 1111",
+                    phone_link: "tel:+97143171111",
+                    email: "sales@meraas.com",
+                    email_link: "mailto:sales@meraas.com",
+                    whatsapp: "+971 50 317 1111"
                   },
-                  visitor_notes: "Complimentary valet parking available. Property tours by appointment — walk-ins welcome during operating hours."
+                  visitor_notes: "Complimentary valet parking available. Property tours by appointment — walk-ins welcome during operating hours. Ask about our virtual tours for overseas buyers."
                 }
               }
             ]
@@ -12804,99 +12804,182 @@ const MOCK_RESPONSES = {
     template: [{ name: "ScheduleAppointment" }]
   },
   "tell me about payment plans": {
-    text: "Dubai Holdings offers flexible payment plans across our developments. Most properties feature a 60/40 or 80/20 structure with post-handover options available.",
+    text: "Meraas offers flexible payment plans across our developments. City Walk Crestlane starts at AED 2.7M, Design Quarter at d3 from AED 1.87M, and Bluewaters Bay from AED 2.85M. Most projects offer construction-linked installment plans — download the detailed PDF from each project page for full terms.",
     options: [
-      { name: "Show me luxury villas" },
-      { name: "Waterfront apartments" },
+      { name: "Waterfront residences" },
+      { name: "Urban apartments" },
       { name: "Schedule a viewing" }
     ]
   },
   "compare these properties": {
-    text: "Here's a detailed comparison of the investment properties to help you make an informed decision.",
+    text: "Here's a comparison of our featured available residences to help you find the right fit.",
     curation: {
       products: [
         {
-          id: "INV-001",
-          image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop",
-          name: "Business Bay Tower Suite",
-          price: "AED 3,200,000",
-          rating: 4.5,
-          features: [
-            { name: "Location", value: "Business Bay" },
-            { name: "Rental Yield", value: "8.0%" },
-            { name: "Size", value: "1,450 sqft" },
-            { name: "Type", value: "2 Bed Apartment" }
-          ]
-        },
-        {
-          id: "INV-002",
-          image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",
-          name: "JBR Walk Residence",
-          price: "AED 4,800,000",
+          id: "CWC-001",
+          image: "https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg",
+          name: "City Walk Crestlane",
+          price: "From AED 2.70M",
           rating: 4.7,
           features: [
-            { name: "Location", value: "JBR" },
-            { name: "Rental Yield", value: "9.2%" },
-            { name: "Size", value: "2,200 sqft" },
-            { name: "Type", value: "3 Bed Beachfront" }
+            { name: "Location", value: "City Walk" },
+            { name: "Type", value: "1-4 Bed Apartments" },
+            { name: "Proximity", value: "2 min to City Mall" },
+            { name: "Highlight", value: "Waterfront Urban" }
           ]
         },
         {
-          id: "INV-003",
-          image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop",
-          name: "Palm Jumeirah Studio",
-          price: "AED 1,800,000",
-          rating: 4.3,
+          id: "BWB-001",
+          image: "https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png",
+          name: "Bluewaters Bay",
+          price: "From AED 2.85M",
+          rating: 4.6,
           features: [
-            { name: "Location", value: "Palm Jumeirah" },
-            { name: "Rental Yield", value: "7.5%" },
-            { name: "Size", value: "650 sqft" },
-            { name: "Type", value: "Studio" }
+            { name: "Location", value: "Bluewaters Island" },
+            { name: "Type", value: "1-4 Bed Waterfront" },
+            { name: "Proximity", value: "5 min walk to Ain Dubai" },
+            { name: "Highlight", value: "Arabian Gulf Views" }
+          ]
+        },
+        {
+          id: "DQD3-001",
+          image: "https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png",
+          name: "Design Quarter at d3",
+          price: "From AED 1.87M",
+          rating: 4.5,
+          features: [
+            { name: "Location", value: "Dubai Design District" },
+            { name: "Type", value: "1-3 Bed Apartments" },
+            { name: "Proximity", value: "10 min to Downtown" },
+            { name: "Highlight", value: "Canal & Creative Hub" }
           ]
         }
       ]
     },
     template: [{ name: "Comparison" }]
   },
-  "jumeirah bay island": {
-    text: "Jumeirah Bay Island by Meraas is one of Dubai's most exclusive addresses — a sculpted island in the shape of a seahorse offering ultra-premium residences and villas.",
+  "solaya at la mer": {
+    text: "Solaya — a cultured coastal community by Meraas & Brookfield Properties. 234 residences across nine beachfront buildings at La Mer, Jumeirah 1. Direct beach access, surrounded by renowned hotels, beach clubs, and restaurants.",
     curation: [
       {
         personalizations: [
           {
-            personalizationPointName: "DH_Property_Recommendations",
+            personalizationPointName: "Meraas_Property_Recommendations",
             data: [
               {
-                sku: "JBI-V-001",
-                name: "Jumeirah Bay Island Villa",
-                Image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&auto=format&fit=crop",
-                price: 45e6,
+                sku: "SOLAYA-2BR",
+                name: "Solaya 2 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2026-04/Gallery-1.jpg",
+                price: 138e5,
                 currency: "AED",
-                productLabel: "Ultra Premium",
-                description: "6 Bed, 7 Bath, 12500 sqft",
-                category1: "Jumeirah Bay Island",
+                productLabel: "Beachfront",
+                description: "2 Bed, Sea Views",
+                category1: "La Mer",
                 category3: "Meraas",
-                bedrooms: 6,
-                bathrooms: 7,
-                area: 12500,
+                bedrooms: 2,
+                bathrooms: 3,
+                area: 2800,
                 areaUnit: "sqft",
-                productUrl: "https://meraas.com/en/master-development/jumeriah-bay-island"
+                productUrl: "https://meraas.com/en/project/solaya"
               },
               {
-                sku: "JBI-A-001",
-                name: "Jumeirah Bay Penthouse",
-                Image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop",
+                sku: "SOLAYA-4BR",
+                name: "Solaya 4 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2026-04/Gallery-2.jpg",
                 price: 22e6,
                 currency: "AED",
-                productLabel: "Penthouse",
-                description: "4 Bed, 5 Bath, 7800 sqft",
-                category1: "Jumeirah Bay Island",
+                productLabel: "Premium",
+                description: "4 Bed, Beach Access",
+                category1: "La Mer",
                 category3: "Meraas",
                 bedrooms: 4,
                 bathrooms: 5,
-                area: 7800,
+                area: 5500,
                 areaUnit: "sqft",
-                productUrl: "https://meraas.com/en/master-development/jumeriah-bay-island"
+                productUrl: "https://meraas.com/en/project/solaya"
+              },
+              {
+                sku: "SOLAYA-PH",
+                name: "Solaya Penthouse",
+                Image: "https://meraas.com/sites/default/files/2026-04/Gallery-3.jpg",
+                price: 35e6,
+                currency: "AED",
+                productLabel: "Penthouse",
+                description: "5 Bed, Full Floor",
+                category1: "La Mer",
+                category3: "Meraas",
+                bedrooms: 5,
+                bathrooms: 6,
+                area: 8500,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/solaya"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    template: [{ name: "Recs" }],
+    options: [
+      { name: "Schedule a viewing" },
+      { name: "Compare these properties" }
+    ]
+  },
+  "bluewaters bay": {
+    text: "Bluewaters Bay — spectacular waterfront apartments rising from the Arabian Gulf. Contemporary 1 to 4-bedroom apartments with views of Ain Dubai, the city skyline, and the yacht-dotted coastline. Construction at 23% with Tower 1 at Level 27.",
+    curation: [
+      {
+        personalizations: [
+          {
+            personalizationPointName: "Meraas_Property_Recommendations",
+            data: [
+              {
+                sku: "BWB-1BR",
+                name: "Bluewaters Bay 1 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png",
+                price: 285e4,
+                currency: "AED",
+                productLabel: "Gulf Views",
+                description: "1 Bed, Ain Dubai Views",
+                category1: "Bluewaters",
+                category3: "Meraas",
+                bedrooms: 1,
+                bathrooms: 2,
+                area: 900,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/bluewaters-bay"
+              },
+              {
+                sku: "BWB-2BR",
+                name: "Bluewaters Bay 2 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20%E2%80%93%202.png",
+                price: 42e5,
+                currency: "AED",
+                productLabel: "Sea View",
+                description: "2 Bed, Infinity Pool",
+                category1: "Bluewaters",
+                category3: "Meraas",
+                bedrooms: 2,
+                bathrooms: 3,
+                area: 1400,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/bluewaters-bay"
+              },
+              {
+                sku: "BWB-3BR",
+                name: "Bluewaters Bay 3 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20%E2%80%93%203.png",
+                price: 65e5,
+                currency: "AED",
+                productLabel: "Premium",
+                description: "3 Bed, Panoramic Views",
+                category1: "Bluewaters",
+                category3: "Meraas",
+                bedrooms: 3,
+                bathrooms: 4,
+                area: 2100,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/bluewaters-bay"
               }
             ]
           }
@@ -12909,45 +12992,61 @@ const MOCK_RESPONSES = {
       { name: "Tell me about payment plans" }
     ]
   },
-  "palm jumeirah": {
-    text: "Palm Jumeirah by Nakheel — the world's most iconic man-made island. Offering beachfront villas and premium apartments with unmatched views of the Arabian Gulf.",
+  "madinat jumeirah living": {
+    text: "Madinat Jumeirah Living — Dubai's most prestigious seafront neighbourhood. Contemporary apartments with Arabesque influences, set against the Burj Al Arab backdrop. 190+ berth marina, beach access, and 5-star hospitality.",
     curation: [
       {
         personalizations: [
           {
-            personalizationPointName: "DH_Property_Recommendations",
+            personalizationPointName: "Meraas_Property_Recommendations",
             data: [
               {
-                sku: "PJ-V-002",
-                name: "Palm Jumeirah Signature Villa",
-                Image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop",
-                price: 38e6,
+                sku: "MJL-1BR",
+                name: "MJL Residences 1 Bed",
+                Image: "https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20-%201.png",
+                price: 153e4,
                 currency: "AED",
-                productLabel: "Beachfront",
-                description: "5 Bed, 6 Bath, 10800 sqft",
-                category1: "Palm Jumeirah",
-                category3: "Nakheel",
-                bedrooms: 5,
-                bathrooms: 6,
-                area: 10800,
+                productLabel: "From 1.53M",
+                description: "1 Bed, Burj Al Arab View",
+                category1: "Madinat Jumeirah Living",
+                category3: "Meraas",
+                bedrooms: 1,
+                bathrooms: 1,
+                area: 750,
                 areaUnit: "sqft",
-                productUrl: "https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"
+                productUrl: "https://meraas.com/en/project/mjl-residences"
               },
               {
-                sku: "INV-003",
-                name: "Palm Jumeirah Studio Collection",
-                Image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&auto=format&fit=crop",
-                price: 18e5,
+                sku: "MJL-2BR",
+                name: "MJL Residences 2 Bed",
+                Image: "https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20%E2%80%93%202.png",
+                price: 25e5,
                 currency: "AED",
-                productLabel: "Entry Point",
-                description: "Studio, 1 Bath, 650 sqft",
-                category1: "Palm Jumeirah",
-                category3: "Nakheel",
-                bedrooms: 0,
-                bathrooms: 1,
-                area: 650,
+                productLabel: "Marina View",
+                description: "2 Bed, Marina & Beach",
+                category1: "Madinat Jumeirah Living",
+                category3: "Meraas",
+                bedrooms: 2,
+                bathrooms: 2,
+                area: 1200,
                 areaUnit: "sqft",
-                productUrl: "https://www.nakheel.com/en/developments/nakheel-collections/palmjumeirah"
+                productUrl: "https://meraas.com/en/project/mjl-residences"
+              },
+              {
+                sku: "MJL-3BR",
+                name: "MJL Residences 3 Bed",
+                Image: "https://meraas.com/sites/default/files/2024-03/MJL%20-%20TG%20%E2%80%93%203.png",
+                price: 38e5,
+                currency: "AED",
+                productLabel: "Premium",
+                description: "3 Bed, Seafront Living",
+                category1: "Madinat Jumeirah Living",
+                category3: "Meraas",
+                bedrooms: 3,
+                bathrooms: 3,
+                area: 1800,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/mjl-residences"
               }
             ]
           }
@@ -12960,29 +13059,61 @@ const MOCK_RESPONSES = {
       { name: "Compare these properties" }
     ]
   },
-  "dubai hills": {
-    text: "Dubai Hills Estate — a premium master-planned community featuring an 18-hole championship golf course, parks, and world-class retail. The heart of new Dubai.",
+  "city walk crestlane": {
+    text: "City Walk Crestlane — an exclusive collection of apartments and duplexes combining urban energy with waterfront living. Water isn't just a feature — it's the essence. 2 min walk to City Mall, 7 min from Jumeirah Beach.",
     curation: [
       {
         personalizations: [
           {
-            personalizationPointName: "DH_Property_Recommendations",
+            personalizationPointName: "Meraas_Property_Recommendations",
             data: [
               {
-                sku: "DH-V-003",
-                name: "Dubai Hills Estate Mansion",
-                Image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&auto=format&fit=crop",
-                price: 28e6,
+                sku: "CWC-1BR",
+                name: "Crestlane 1 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg",
+                price: 27e5,
                 currency: "AED",
-                productLabel: "Golf Course View",
-                description: "5 Bed, 5 Bath, 9200 sqft",
-                category1: "Dubai Hills Estate",
-                category3: "Dubai Holding RE",
-                bedrooms: 5,
-                bathrooms: 5,
-                area: 9200,
+                productLabel: "From 2.7M",
+                description: "1 Bed, Water Features",
+                category1: "City Walk",
+                category3: "Meraas",
+                bedrooms: 1,
+                bathrooms: 1,
+                area: 850,
                 areaUnit: "sqft",
-                productUrl: "https://www.dubaiholding.com/en/our-business/our-companies/dubai-holding-real-estate"
+                productUrl: "https://meraas.com/en/project/city-walk-crestlane"
+              },
+              {
+                sku: "CWC-2BR",
+                name: "Crestlane 2 Bedroom",
+                Image: "https://meraas.com/sites/default/files/2025-06/Top%20Gallery%202.jpg",
+                price: 42e5,
+                currency: "AED",
+                productLabel: "Skyline Views",
+                description: "2 Bed, Open Layout",
+                category1: "City Walk",
+                category3: "Meraas",
+                bedrooms: 2,
+                bathrooms: 2,
+                area: 1400,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/city-walk-crestlane"
+              },
+              {
+                sku: "CWC-DPX",
+                name: "Crestlane 4 Bed Duplex",
+                Image: "https://meraas.com/sites/default/files/2025-11/880x860.jpg",
+                price: 85e5,
+                currency: "AED",
+                productLabel: "Duplex",
+                description: "4 Bed Duplex, Premium",
+                category1: "City Walk",
+                category3: "Meraas",
+                bedrooms: 4,
+                bathrooms: 4,
+                area: 3600,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/city-walk-crestlane"
               }
             ]
           }
@@ -12992,7 +13123,141 @@ const MOCK_RESPONSES = {
     template: [{ name: "Recs" }],
     options: [
       { name: "Schedule a viewing" },
-      { name: "Show me luxury villas" }
+      { name: "Tell me about payment plans" }
+    ]
+  },
+  "design quarter at d3": {
+    text: "Design Quarter at d3 — where home meets hustle meets the creative bustle. Located in Dubai Design District alongside Dubai Design Week, Fashion Week, and Sole DXB. City views, canal access, and modern community living from AED 1.87M.",
+    curation: [
+      {
+        personalizations: [
+          {
+            personalizationPointName: "Meraas_Property_Recommendations",
+            data: [
+              {
+                sku: "DQD3-1BR",
+                name: "Design Quarter 1 Bed",
+                Image: "https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png",
+                price: 187e4,
+                currency: "AED",
+                productLabel: "From 1.87M",
+                description: "1 Bed, Canal View",
+                category1: "Dubai Design District",
+                category3: "Meraas",
+                bedrooms: 1,
+                bathrooms: 1,
+                area: 750,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/designquarter-at-d3"
+              },
+              {
+                sku: "DQD3-2BR",
+                name: "Design Quarter 2 Bed",
+                Image: "https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%202.png",
+                price: 26e5,
+                currency: "AED",
+                productLabel: "City View",
+                description: "2 Bed, Creative Hub",
+                category1: "Dubai Design District",
+                category3: "Meraas",
+                bedrooms: 2,
+                bathrooms: 2,
+                area: 1100,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/designquarter-at-d3"
+              },
+              {
+                sku: "DQD3-3BR",
+                name: "Design Quarter 3 Bed",
+                Image: "https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%203.png",
+                price: 34e5,
+                currency: "AED",
+                productLabel: "Premium",
+                description: "3 Bed, Panoramic Views",
+                category1: "Dubai Design District",
+                category3: "Meraas",
+                bedrooms: 3,
+                bathrooms: 3,
+                area: 1600,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/designquarter-at-d3"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    template: [{ name: "Recs" }],
+    options: [
+      { name: "Schedule a viewing" },
+      { name: "Compare these properties" }
+    ]
+  },
+  "emirates towers": {
+    text: "Jumeirah Residences Emirates Towers — a new architectural icon. Apartments with no internal columns creating open, fluid spaces. Sky terrace with infinity pool, private cinema, padel court, and Jumeirah Signature Services. From AED 3.51M.",
+    curation: [
+      {
+        personalizations: [
+          {
+            personalizationPointName: "Meraas_Property_Recommendations",
+            data: [
+              {
+                sku: "JRET-1BR",
+                name: "Emirates Towers 1 Bed",
+                Image: "https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-1.jpg",
+                price: 351e4,
+                currency: "AED",
+                productLabel: "From 3.51M",
+                description: "1 Bed, Skyline Views",
+                category1: "Trade Centre 2",
+                category3: "Meraas",
+                bedrooms: 1,
+                bathrooms: 1,
+                area: 1e3,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/jumeirah-emirates-tower"
+              },
+              {
+                sku: "JRET-3BR",
+                name: "Emirates Towers 3 Bed",
+                Image: "https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-2.jpg",
+                price: 82e5,
+                currency: "AED",
+                productLabel: "Double Height",
+                description: "3 Bed, Double Height Living",
+                category1: "Trade Centre 2",
+                category3: "Meraas",
+                bedrooms: 3,
+                bathrooms: 3,
+                area: 2800,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/jumeirah-emirates-tower"
+              },
+              {
+                sku: "JRET-4BR",
+                name: "Emirates Towers 4 Bed",
+                Image: "https://meraas.com/sites/default/files/2025-05/Meraas-Website-Images-880x860-3.jpg",
+                price: 15e6,
+                currency: "AED",
+                productLabel: "Sky Pool",
+                description: "4 Bed, Private Sky Terrace",
+                category1: "Trade Centre 2",
+                category3: "Meraas",
+                bedrooms: 4,
+                bathrooms: 5,
+                area: 4500,
+                areaUnit: "sqft",
+                productUrl: "https://meraas.com/en/project/jumeirah-emirates-tower"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    template: [{ name: "Recs" }],
+    options: [
+      { name: "Schedule a viewing" },
+      { name: "Tell me about payment plans" }
     ]
   }
 };
@@ -13130,7 +13395,7 @@ function initMockController() {
   }, 100);
 }
 const ChatBot = ({ show }) => {
-  const AGENT_NAME = "Dubai Holdings Concierge";
+  const AGENT_NAME = "Meraas Concierge";
   const [inputText, setInputText] = reactExports.useState("");
   const [isTyping, setIsTyping] = reactExports.useState(false);
   const [entries, setEntries] = reactExports.useState([]);
@@ -13563,7 +13828,7 @@ const ContentZone = ({ show }) => {
   ] }) }) }) });
 };
 const Header = ({ show }) => {
-  const AGENT_NAME = "Dubai Holdings Concierge";
+  const AGENT_NAME = "Meraas Concierge";
   if (!show) return null;
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "header-container", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "agent-name", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: AGENT_NAME }) }),
@@ -13590,8 +13855,8 @@ const SearchBar = ({ show, onInitialMessage }) => {
   const [searchText, setSearchText] = reactExports.useState("");
   const [hasSent, setHasSent] = reactExports.useState(false);
   const searchActions = [
-    { text: "Explore Properties", value: "Show me luxury villas" },
-    { text: "Waterfront Living", value: "Waterfront apartments" }
+    { text: "Waterfront Living", value: "Waterfront residences" },
+    { text: "Urban Apartments", value: "Urban apartments" }
   ];
   const handleSearch = (e) => {
     var _a;
@@ -13622,7 +13887,7 @@ const SearchBar = ({ show, onInitialMessage }) => {
           type: "text",
           value: searchText,
           onChange: (e) => setSearchText(e.target.value),
-          placeholder: "Ask about Dubai Holdings properties...",
+          placeholder: "Ask about Meraas residences...",
           className: "search-input"
         }
       ),
