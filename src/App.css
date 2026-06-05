@@ -76,8 +76,12 @@ body {
   font-family: var(--sans);
   display: flex;
   flex-direction: column;
-  background: var(--cream);
+  pointer-events: none;
   -webkit-font-smoothing: antialiased;
+}
+
+.app > * {
+  pointer-events: auto;
 }
 
 .conversation-container {
