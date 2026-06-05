@@ -17,6 +17,10 @@ const Comparison: React.FC<{ content: StaticContentMessageTextPayload }> = ({ co
 
   const allFeatures = products[0]?.features?.map(f => f.name) || [];
 
+  const handleViewDetails = (product: Product) => {
+    window.AdaptiveWebsite.sendTextMessage(product.name);
+  };
+
   return (
     <div className="comparison-template">
       <div className="comparison-header">
@@ -56,6 +60,19 @@ const Comparison: React.FC<{ content: StaticContentMessageTextPayload }> = ({ co
                     {'★'.repeat(Math.floor(p.rating))}{'☆'.repeat(5 - Math.floor(p.rating))}
                     <span>{p.rating}</span>
                   </div>
+                </td>
+              ))}
+            </tr>
+            <tr>
+              <td></td>
+              {products.map(p => (
+                <td key={p.id}>
+                  <button className="comparison-view-btn" onClick={() => handleViewDetails(p)}>
+                    View Details
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="12" height="12">
+                      <path d="M5 12h14M13 6l6 6-6 6"/>
+                    </svg>
+                  </button>
                 </td>
               ))}
             </tr>
