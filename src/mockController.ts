@@ -771,14 +771,71 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
   },
 };
 
+const ALIASES: Record<string, string> = {
+  'waterfront': 'waterfront residences',
+  'beach': 'waterfront residences',
+  'beachfront': 'waterfront residences',
+  'sea': 'waterfront residences',
+  'ocean': 'waterfront residences',
+  'apartment': 'urban apartments',
+  'apartments': 'urban apartments',
+  'urban': 'urban apartments',
+  'penthouse': 'luxury penthouses',
+  'penthouses': 'luxury penthouses',
+  'luxury': 'luxury penthouses',
+  'viewing': 'schedule a viewing',
+  'visit': 'schedule a viewing',
+  'appointment': 'schedule a viewing',
+  'book': 'schedule a viewing',
+  'payment': 'tell me about payment plans',
+  'plans': 'tell me about payment plans',
+  'installment': 'tell me about payment plans',
+  'compare': 'compare these properties',
+  'comparison': 'compare these properties',
+  'solaya': 'solaya at la mer',
+  'la mer': 'solaya at la mer',
+  'bluewaters': 'bluewaters bay',
+  'ain dubai': 'bluewaters bay',
+  'madinat': 'madinat jumeirah living',
+  'mjl': 'madinat jumeirah living',
+  'jumeirah living': 'madinat jumeirah living',
+  'city walk': 'city walk crestlane',
+  'crestlane': 'city walk crestlane',
+  'design quarter': 'design quarter at d3',
+  'd3': 'design quarter at d3',
+  'design district': 'design quarter at d3',
+  'emirates towers': 'emirates towers',
+  'emirates tower': 'emirates towers',
+  'trade centre': 'emirates towers',
+};
+
 function findResponse(userMessage: string): StaticContentMessageTextPayload {
   const normalised = userMessage.toLowerCase().trim();
   if (MOCK_RESPONSES[normalised]) return MOCK_RESPONSES[normalised];
-  for (const key of Object.keys(MOCK_RESPONSES)) {
-    if (normalised.includes(key) || key.includes(normalised)) {
-      return MOCK_RESPONSES[key];
+
+  // Check aliases first (longest match wins)
+  const aliasKeys = Object.keys(ALIASES).sort((a, b) => b.length - a.length);
+  for (const alias of aliasKeys) {
+    if (normalised.includes(alias)) {
+      return MOCK_RESPONSES[ALIASES[alias]];
     }
   }
+
+  // Score each key by how many of its words appear in the user message
+  let bestKey = '';
+  let bestScore = 0;
+  for (const key of Object.keys(MOCK_RESPONSES)) {
+    if (key === 'default') continue;
+    const keyWords = key.split(/\s+/);
+    const matchedWords = keyWords.filter(w => normalised.includes(w));
+    const score = matchedWords.length / keyWords.length;
+    if (score > bestScore) {
+      bestScore = score;
+      bestKey = key;
+    }
+  }
+
+  if (bestScore >= 0.5 && bestKey) return MOCK_RESPONSES[bestKey];
   return MOCK_RESPONSES['default'];
 }
 
