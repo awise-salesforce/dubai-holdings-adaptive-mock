@@ -34,9 +34,9 @@ const SearchBar: React.FC<{ show: boolean; onInitialMessage: (text: string) => v
       <form onSubmit={handleSearch} className="search-form">
         <div className="search-bar">
           <div className="search-icon">
-            <svg viewBox="0 0 100 100" fill="none" width="24" height="24">
-              <circle cx="50" cy="50" r="46" stroke="#C9A84C" strokeWidth="3"/>
-              <path d="M50 10 L50 50 L85 70 M50 50 L15 70" stroke="#C9A84C" strokeWidth="2.5" strokeLinecap="round"/>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20" stroke="#C9A84C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
             </svg>
           </div>
           <input

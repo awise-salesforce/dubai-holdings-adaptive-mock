@@ -117,9 +117,9 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
     ],
     template: [{ name: "Recs" }],
     options: [
+      { name: "Compare these properties" },
       { name: "Solaya at La Mer" },
-      { name: "Bluewaters Bay" },
-      { name: "Madinat Jumeirah Living" },
+      { name: "Schedule a viewing" },
     ],
   },
   "urban apartments": {
@@ -188,9 +188,9 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
     ],
     template: [{ name: "Recs" }],
     options: [
+      { name: "Compare these properties" },
       { name: "City Walk Crestlane" },
-      { name: "Design Quarter at d3" },
-      { name: "Emirates Towers" },
+      { name: "Schedule a viewing" },
     ],
   },
   "luxury penthouses": {
