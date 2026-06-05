@@ -275,6 +275,8 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
   },
   "schedule viewing crestlane": {
     text: "Great choice — City Walk Crestlane. Our sales team can arrange a private tour of the show apartments. What day works best for you?",
+    curation: [{ personalizations: [{ personalizationPointName: "Schedule_Appointment", data: [{ page_info: { project_name: "City Walk Crestlane", page_title: "Schedule a Viewing", hero_image_url: "https://meraas.com/sites/default/files/2025-06/Top%20Gallery%201.jpg", hero_label: "City Walk Crestlane" }, sales_center: { name: "Meraas & Nakheel Head Office, Building 5", address: { line_1: "King Salman Bin Abdul Aziz Al Saud Street", line_2: "Al Sufouh 2 - Dubai", region: "UAE" }, map_data: { directions_url: "https://www.google.com/maps/place/Meraas+and+Nakheel+Sales+Center/@25.1028056,55.1559444,715m" }, operating_hours: [{ days: "Monday – Thursday", hours: "8:00 AM to 5:00 PM", current_status: "Open" }, { days: "Friday", hours: "8:00 AM to 12:00 PM and 2:00 PM to 5:00 PM", current_status: "Open" }], contact_methods: { phone: "800 MERAAS (800-637227)", email: "sales@meraas.com", whatsapp: "+971 4 871 3735" }, visitor_notes: "International Contact Number: +971 4 871 3735. Property tours by appointment." } }] }] }],
+    template: [{ name: "ScheduleAppointment" }],
     options: [
       { name: "This Sunday" },
       { name: "Monday" },
@@ -284,6 +286,8 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
   },
   "schedule viewing bluewaters": {
     text: "Bluewaters Bay — an excellent choice. We can arrange a site visit to see the construction progress and show units. What day works best for you?",
+    curation: [{ personalizations: [{ personalizationPointName: "Schedule_Appointment", data: [{ page_info: { project_name: "Bluewaters Bay", page_title: "Schedule a Viewing", hero_image_url: "https://meraas.com/sites/default/files/2024-05/BWB%20-%20TG%20-%201.png", hero_label: "Bluewaters Bay" }, sales_center: { name: "Meraas & Nakheel Head Office, Building 5", address: { line_1: "King Salman Bin Abdul Aziz Al Saud Street", line_2: "Al Sufouh 2 - Dubai", region: "UAE" }, map_data: { directions_url: "https://www.google.com/maps/place/Meraas+and+Nakheel+Sales+Center/@25.1028056,55.1559444,715m" }, operating_hours: [{ days: "Monday – Thursday", hours: "8:00 AM to 5:00 PM", current_status: "Open" }, { days: "Friday", hours: "8:00 AM to 12:00 PM and 2:00 PM to 5:00 PM", current_status: "Open" }], contact_methods: { phone: "800 MERAAS (800-637227)", email: "sales@meraas.com", whatsapp: "+971 4 871 3735" }, visitor_notes: "International Contact Number: +971 4 871 3735. Property tours by appointment." } }] }] }],
+    template: [{ name: "ScheduleAppointment" }],
     options: [
       { name: "This Sunday" },
       { name: "Monday" },
@@ -293,6 +297,8 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
   },
   "schedule viewing solaya": {
     text: "Solaya at La Mer — our newest beachfront collection. We can arrange a private tour of the sales gallery and model units. What day works best for you?",
+    curation: [{ personalizations: [{ personalizationPointName: "Schedule_Appointment", data: [{ page_info: { project_name: "Solaya at La Mer", page_title: "Schedule a Viewing", hero_image_url: "https://meraas.com/sites/default/files/2026-04/Gallery-1.jpg", hero_label: "Solaya at La Mer" }, sales_center: { name: "Meraas & Nakheel Head Office, Building 5", address: { line_1: "King Salman Bin Abdul Aziz Al Saud Street", line_2: "Al Sufouh 2 - Dubai", region: "UAE" }, map_data: { directions_url: "https://www.google.com/maps/place/Meraas+and+Nakheel+Sales+Center/@25.1028056,55.1559444,715m" }, operating_hours: [{ days: "Monday – Thursday", hours: "8:00 AM to 5:00 PM", current_status: "Open" }, { days: "Friday", hours: "8:00 AM to 12:00 PM and 2:00 PM to 5:00 PM", current_status: "Open" }], contact_methods: { phone: "800 MERAAS (800-637227)", email: "sales@meraas.com", whatsapp: "+971 4 871 3735" }, visitor_notes: "International Contact Number: +971 4 871 3735. Property tours by appointment." } }] }] }],
+    template: [{ name: "ScheduleAppointment" }],
     options: [
       { name: "This Sunday" },
       { name: "Monday" },
@@ -302,6 +308,8 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
   },
   "schedule viewing d3": {
     text: "Design Quarter at d3 — perfect for those who appreciate creative living. We can show you the show apartment and community amenities. What day works best for you?",
+    curation: [{ personalizations: [{ personalizationPointName: "Schedule_Appointment", data: [{ page_info: { project_name: "Design Quarter at d3", page_title: "Schedule a Viewing", hero_image_url: "https://meraas.com/sites/default/files/2024-03/DQD3%20-%20TG%20-%201.png", hero_label: "Design Quarter at d3" }, sales_center: { name: "Meraas & Nakheel Head Office, Building 5", address: { line_1: "King Salman Bin Abdul Aziz Al Saud Street", line_2: "Al Sufouh 2 - Dubai", region: "UAE" }, map_data: { directions_url: "https://www.google.com/maps/place/Meraas+and+Nakheel+Sales+Center/@25.1028056,55.1559444,715m" }, operating_hours: [{ days: "Monday – Thursday", hours: "8:00 AM to 5:00 PM", current_status: "Open" }, { days: "Friday", hours: "8:00 AM to 12:00 PM and 2:00 PM to 5:00 PM", current_status: "Open" }], contact_methods: { phone: "800 MERAAS (800-637227)", email: "sales@meraas.com", whatsapp: "+971 4 871 3735" }, visitor_notes: "International Contact Number: +971 4 871 3735. Property tours by appointment." } }] }] }],
+    template: [{ name: "ScheduleAppointment" }],
     options: [
       { name: "This Sunday" },
       { name: "Monday" },
