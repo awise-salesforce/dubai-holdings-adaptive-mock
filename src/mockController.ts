@@ -1067,11 +1067,9 @@ export function initMockController() {
         }));
 
         const response = findResponse(value);
-        if (response.curation || response.template) {
-          window.dispatchEvent(new CustomEvent(Events.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED, {
-            detail: { content: response },
-          }));
-        }
+        window.dispatchEvent(new CustomEvent(Events.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED, {
+          detail: { content: response.curation || response.template ? response : null },
+        }));
       }, 1200 + Math.random() * 800);
     },
     minimize: () => {

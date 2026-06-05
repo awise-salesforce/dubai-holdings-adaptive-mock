@@ -16,6 +16,8 @@ const ContentZone: React.FC<{ show: boolean }> = ({ show }) => {
     const onContent = (e: CustomEvent) => {
       if (e.detail.content) {
         setContent(e.detail.content);
+      } else {
+        setContent(null);
       }
     };
     window.addEventListener(Events.ON_EMBEDDED_MESSAGING_CONTENT_RECEIVED, onContent as EventListener);
