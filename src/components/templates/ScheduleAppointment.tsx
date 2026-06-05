@@ -101,15 +101,29 @@ const ScheduleAppointment: React.FC<ScheduleAppointmentProps> = ({ content, onBa
         </div>
 
         <div className="schedule-map">
-          <div className="map-placeholder">
-            <div className="map-pin">📍</div>
-            <p>{center.name}</p>
-            <p className="map-address">{address.line_1}, {address.line_2}</p>
-            {center.map_data?.directions_url && (
-              <a href={center.map_data.directions_url} target="_blank" rel="noopener noreferrer" className="directions-btn">
-                Get Directions
-              </a>
-            )}
+          <div className="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.7!2d55.2567!3d25.2048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0x1234567890abcdef!2sMeraas%20Sales%20Centre%20-%20City%20Walk!5e0!3m2!1sen!2sae!4v1717500000000!5m2!1sen!2sae"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Meraas Sales Centre Location"
+            />
+          </div>
+          <div className="map-info-card">
+            <p className="map-info-name">{center.name}</p>
+            <p className="map-info-address">{address.line_1}, {address.line_2}</p>
+            <a
+              href="https://maps.app.goo.gl/vpLHnTWMGPVCHBuu5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="directions-btn"
+            >
+              Get Directions
+            </a>
           </div>
         </div>
       </div>
