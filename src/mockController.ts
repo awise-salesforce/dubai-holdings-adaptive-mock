@@ -265,7 +265,145 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
     ],
   },
   "schedule a viewing": {
-    text: "I'd be happy to help you schedule a private viewing at our Meraas Sales Centre.",
+    text: "I'd be happy to help you schedule a private viewing. Which project are you interested in visiting?",
+    options: [
+      { name: "City Walk Crestlane" },
+      { name: "Bluewaters Bay" },
+      { name: "Solaya at La Mer" },
+      { name: "Design Quarter at d3" },
+    ],
+  },
+  "schedule viewing crestlane": {
+    text: "Great choice — City Walk Crestlane. Our sales team can arrange a private tour of the show apartments. What day works best for you?",
+    options: [
+      { name: "This Sunday" },
+      { name: "Monday" },
+      { name: "Tuesday" },
+      { name: "Another day" },
+    ],
+  },
+  "schedule viewing bluewaters": {
+    text: "Bluewaters Bay — an excellent choice. We can arrange a site visit to see the construction progress and show units. What day works best for you?",
+    options: [
+      { name: "This Sunday" },
+      { name: "Monday" },
+      { name: "Tuesday" },
+      { name: "Another day" },
+    ],
+  },
+  "schedule viewing solaya": {
+    text: "Solaya at La Mer — our newest beachfront collection. We can arrange a private tour of the sales gallery and model units. What day works best for you?",
+    options: [
+      { name: "This Sunday" },
+      { name: "Monday" },
+      { name: "Tuesday" },
+      { name: "Another day" },
+    ],
+  },
+  "schedule viewing d3": {
+    text: "Design Quarter at d3 — perfect for those who appreciate creative living. We can show you the show apartment and community amenities. What day works best for you?",
+    options: [
+      { name: "This Sunday" },
+      { name: "Monday" },
+      { name: "Tuesday" },
+      { name: "Another day" },
+    ],
+  },
+  "this sunday": {
+    text: "Sunday works well. We have availability at these times — which would you prefer?",
+    options: [
+      { name: "10:00 AM" },
+      { name: "12:00 PM" },
+      { name: "2:00 PM" },
+      { name: "4:00 PM" },
+    ],
+  },
+  "monday": {
+    text: "Monday is available. What time would suit you best?",
+    options: [
+      { name: "10:00 AM" },
+      { name: "12:00 PM" },
+      { name: "2:00 PM" },
+      { name: "4:00 PM" },
+    ],
+  },
+  "tuesday": {
+    text: "Tuesday works. Here are the available slots — which do you prefer?",
+    options: [
+      { name: "10:00 AM" },
+      { name: "12:00 PM" },
+      { name: "2:00 PM" },
+      { name: "4:00 PM" },
+    ],
+  },
+  "another day": {
+    text: "No problem. We're open Monday to Thursday 8 AM–5 PM and Friday 8 AM–12 PM & 2–5 PM. Just let me know which day and I'll check availability.",
+    options: [
+      { name: "Wednesday" },
+      { name: "Thursday" },
+    ],
+  },
+  "wednesday": {
+    text: "Wednesday is available. What time works for you?",
+    options: [
+      { name: "10:00 AM" },
+      { name: "12:00 PM" },
+      { name: "2:00 PM" },
+      { name: "4:00 PM" },
+    ],
+  },
+  "thursday": {
+    text: "Thursday works. What time would you prefer?",
+    options: [
+      { name: "10:00 AM" },
+      { name: "12:00 PM" },
+      { name: "2:00 PM" },
+      { name: "4:00 PM" },
+    ],
+  },
+  "10:00 am": {
+    text: "10:00 AM — noted. To confirm your booking, could you share your preferred contact method? We'll send a confirmation with directions to the sales centre.",
+    options: [
+      { name: "I'll share my email" },
+      { name: "Call me instead" },
+      { name: "WhatsApp me" },
+    ],
+  },
+  "12:00 pm": {
+    text: "12:00 PM — perfect. To confirm your booking, could you share your preferred contact method? We'll send a confirmation with directions to the sales centre.",
+    options: [
+      { name: "I'll share my email" },
+      { name: "Call me instead" },
+      { name: "WhatsApp me" },
+    ],
+  },
+  "2:00 pm": {
+    text: "2:00 PM — great. To confirm your booking, could you share your preferred contact method? We'll send a confirmation with directions.",
+    options: [
+      { name: "I'll share my email" },
+      { name: "Call me instead" },
+      { name: "WhatsApp me" },
+    ],
+  },
+  "4:00 pm": {
+    text: "4:00 PM — noted. To confirm your booking, could you share your preferred contact method? We'll send a confirmation with directions.",
+    options: [
+      { name: "I'll share my email" },
+      { name: "Call me instead" },
+      { name: "WhatsApp me" },
+    ],
+  },
+  "i'll share my email": {
+    text: "Please type your email address and I'll send the confirmation details.",
+  },
+  "call me instead": {
+    text: "Of course. Please share your phone number and our team will call you to confirm.",
+  },
+  "whatsapp me": {
+    text: "Perfect. Please share your WhatsApp number and we'll send the confirmation there.",
+  },
+  "confirm viewing": {
+    text: "Your viewing is confirmed! Here are the details for your visit.",
     curation: [
       {
         personalizations: [
@@ -275,9 +413,9 @@ const MOCK_RESPONSES: Record<string, StaticContentMessageTextPayload> = {
               {
                 page_info: {
                   project_name: "Meraas",
-                  page_title: "Schedule a Private Viewing",
+                  page_title: "Viewing Confirmed",
                   hero_image_url: "https://meraas.com/sites/default/files/2026-04/Gallery-3.jpg",
-                  hero_label: "Experience Meraas Living",
+                  hero_label: "See You Soon",
                 },
                 sales_center: {
                   name: "Meraas & Nakheel Head Office, Building 5",
@@ -800,32 +938,57 @@ const ALIASES: Record<string, string> = {
 };
 
 // Action intents take priority over project names
-const INTENT_ALIASES: Record<string, string> = {
-  'compare': 'compare these properties',
-  'comparison': 'compare these properties',
-  'versus': 'compare these properties',
-  'vs': 'compare these properties',
-  'viewing': 'schedule a viewing',
-  'visit': 'schedule a viewing',
-  'appointment': 'schedule a viewing',
-  'book': 'schedule a viewing',
-  'schedule': 'schedule a viewing',
-  'payment': 'tell me about payment plans',
-  'plans': 'tell me about payment plans',
-  'installment': 'tell me about payment plans',
-  'price': 'tell me about payment plans',
-  'cost': 'tell me about payment plans',
+const INTENT_KEYWORDS = ['compare', 'comparison', 'versus', 'vs'];
+const SCHEDULE_KEYWORDS = ['viewing', 'visit', 'appointment', 'book', 'schedule'];
+const PAYMENT_KEYWORDS = ['payment', 'plans', 'installment', 'price', 'cost'];
+
+// Map project keywords to their schedule-specific response key
+const SCHEDULE_PROJECT_MAP: Record<string, string> = {
+  'city walk': 'schedule viewing crestlane',
+  'crestlane': 'schedule viewing crestlane',
+  'bluewaters': 'schedule viewing bluewaters',
+  'ain dubai': 'schedule viewing bluewaters',
+  'solaya': 'schedule viewing solaya',
+  'la mer': 'schedule viewing solaya',
+  'd3': 'schedule viewing d3',
+  'design quarter': 'schedule viewing d3',
+  'design district': 'schedule viewing d3',
 };
+
+// Detect if user typed something that looks like an email or phone (triggers confirmation)
+function looksLikeContactInfo(msg: string): boolean {
+  return /[@]/.test(msg) || /\+?\d[\d\s\-]{7,}/.test(msg);
+}
 
 function findResponse(userMessage: string): StaticContentMessageTextPayload {
   const normalised = userMessage.toLowerCase().trim();
   if (MOCK_RESPONSES[normalised]) return MOCK_RESPONSES[normalised];
 
-  // Intent aliases always win (compare, schedule, payment)
-  for (const alias of Object.keys(INTENT_ALIASES)) {
-    if (normalised.includes(alias)) {
-      return MOCK_RESPONSES[INTENT_ALIASES[alias]];
+  // If user provides contact info (email/phone), confirm the viewing
+  if (looksLikeContactInfo(normalised)) {
+    return MOCK_RESPONSES['confirm viewing'];
+  }
+
+  // Schedule intent — check if a project is also mentioned
+  const isScheduleIntent = SCHEDULE_KEYWORDS.some(k => normalised.includes(k));
+  if (isScheduleIntent) {
+    const projectKeys = Object.keys(SCHEDULE_PROJECT_MAP).sort((a, b) => b.length - a.length);
+    for (const proj of projectKeys) {
+      if (normalised.includes(proj)) {
+        return MOCK_RESPONSES[SCHEDULE_PROJECT_MAP[proj]];
+      }
     }
+    return MOCK_RESPONSES['schedule a viewing'];
+  }
+
+  // Compare intent
+  if (INTENT_KEYWORDS.some(k => normalised.includes(k))) {
+    return MOCK_RESPONSES['compare these properties'];
+  }
+
+  // Payment intent
+  if (PAYMENT_KEYWORDS.some(k => normalised.includes(k))) {
+    return MOCK_RESPONSES['tell me about payment plans'];
   }
 
   // Then check project/location aliases (longest match wins)
