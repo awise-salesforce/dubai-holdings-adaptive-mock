@@ -1,7 +1,7 @@
 import './Header.css';
 
 const Header: React.FC<{ show: boolean }> = ({ show }) => {
-  const AGENT_NAME = 'Dubai Holdings Concierge';
+  const AGENT_NAME = 'Meraas Concierge';
 
   if (!show) return null;
 

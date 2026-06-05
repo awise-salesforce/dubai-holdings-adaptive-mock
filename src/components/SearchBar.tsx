@@ -6,8 +6,8 @@ const SearchBar: React.FC<{ show: boolean; onInitialMessage: (text: string) => v
   const [hasSent, setHasSent] = useState(false);
 
   const searchActions = [
-    { text: 'Explore Properties', value: 'Show me luxury villas' },
-    { text: 'Waterfront Living', value: 'Waterfront apartments' },
+    { text: 'Waterfront Living', value: 'Waterfront residences' },
+    { text: 'Urban Apartments', value: 'Urban apartments' },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
@@ -43,7 +43,7 @@ const SearchBar: React.FC<{ show: boolean; onInitialMessage: (text: string) => v
             type="text"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
-            placeholder="Ask about Dubai Holdings properties..."
+            placeholder="Ask about Meraas residences..."
             className="search-input"
           />
           <div className="search-actions">

@@ -3,7 +3,7 @@ import type { ConversationEntry, StaticContentMessageTextPayload } from '../mock
 import './ChatBot.css';
 
 const ChatBot: React.FC<{ show: boolean }> = ({ show }) => {
-  const AGENT_NAME = 'Dubai Holdings Concierge';
+  const AGENT_NAME = 'Meraas Concierge';
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [entries, setEntries] = useState<ConversationEntry[]>([]);
