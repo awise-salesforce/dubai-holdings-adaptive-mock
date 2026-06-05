@@ -103,7 +103,7 @@ const ScheduleAppointment: React.FC<ScheduleAppointmentProps> = ({ content, onBa
         <div className="schedule-map">
           <div className="map-embed">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.7!2d55.2567!3d25.2048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0x1234567890abcdef!2sMeraas%20Sales%20Centre%20-%20City%20Walk!5e0!3m2!1sen!2sae!4v1717500000000!5m2!1sen!2sae"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2860!2d55.1559444!3d25.1028056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b4084d56593%3A0x2642cd85f3bd64c7!2sMeraas%20and%20Nakheel%20Sales%20Center!5e0!3m2!1sen!2sae!4v1717500000000!5m2!1sen!2sae"
               width="100%"
               height="100%"
               style={{ border: 0 }}
