@@ -41,6 +41,7 @@ const ContentZone: React.FC<{ show: boolean }> = ({ show }) => {
   };
 
   if (!show) return null;
+  if (!content) return null;
 
   const curation = content?.curation;
   const templateName = content?.template?.[0]?.name;

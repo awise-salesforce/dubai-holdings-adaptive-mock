@@ -12,10 +12,10 @@ const SearchBar: React.FC<{ show: boolean; onInitialMessage: (text: string) => v
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const buttonVal = (form.elements.namedItem('buttonText') as HTMLInputElement)?.value;
-    const textVal = searchText;
-    const textToSend = buttonVal || textVal;
+    const nativeEvent = e.nativeEvent as SubmitEvent;
+    const submitter = nativeEvent.submitter as HTMLButtonElement | null;
+    const buttonVal = submitter?.value || '';
+    const textToSend = buttonVal || searchText;
     if (!textToSend) return;
 
     if (!hasSent) {
